@@ -20,7 +20,7 @@ async function main() {
   try {
     // --- 步骤 1: 获取热门数据 ---
     log("正在获取豆瓣热门列表 (node douban_hot_data.js)...");
-    const hotDataRaw = execSync("node douban_hot_data.js --limit 5", {
+    const hotDataRaw = execSync("node douban_hot_data.js --limit 20", {
       encoding: "utf8",
       stdio: ["inherit", "pipe", "inherit"] // 允许 stderr 日志打印到控制台
     });
