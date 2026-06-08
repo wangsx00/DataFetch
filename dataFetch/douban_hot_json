@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "directors": [
+        "惠楷栋",
+        "王成欣"
+      ],
+      "rate": "7.3",
+      "cover_x": 2700,
+      "star": "35",
+      "title": "家业",
+      "url": "https://movie.douban.com/subject/36883114/",
+      "casts": [
+        "杨紫",
+        "韩东君",
+        "吴冕",
+        "田小洁",
+        "徐百慧"
+      ],
+      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2932320661.jpg",
+      "id": "36883114",
+      "cover_y": 4800,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932955543.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932955543.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932955543/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932955543/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932955543.jpg' -o '2932955543.jpg'"
+    }
+  ]
+}
