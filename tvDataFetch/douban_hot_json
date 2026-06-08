@@ -23,6 +23,98 @@
       "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932955543.jpg",
       "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932955543.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932955543/",
       "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932955543/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932955543.jpg' -o '2932955543.jpg'"
+    },
+    {
+      "directors": [
+        "李少飞"
+      ],
+      "rate": "8.1",
+      "cover_x": 2000,
+      "star": "40",
+      "title": "主角",
+      "url": "https://movie.douban.com/subject/35295564/",
+      "casts": [
+        "张嘉益",
+        "刘浩存",
+        "秦海璐",
+        "窦骁",
+        "翟子路"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2932204747.jpg",
+      "id": "35295564",
+      "cover_y": 3556,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2932698014.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2932698014.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932698014/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932698014/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2932698014.jpg' -o '2932698014.jpg'"
+    },
+    {
+      "directors": [
+        "刘海波"
+      ],
+      "rate": "8.1",
+      "cover_x": 1080,
+      "star": "40",
+      "title": "低智商犯罪",
+      "url": "https://movie.douban.com/subject/35517044/",
+      "casts": [
+        "王骁",
+        "田曦薇",
+        "王传君",
+        "朱云峰",
+        "张瑞涵"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2932040107.jpg",
+      "id": "35517044",
+      "cover_y": 1920,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932550103.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932550103.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932550103/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932550103/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932550103.jpg' -o '2932550103.jpg'"
+    },
+    {
+      "directors": [
+        "刘洪源"
+      ],
+      "rate": "7.0",
+      "cover_x": 2450,
+      "star": "35",
+      "title": "雨霖铃",
+      "url": "https://movie.douban.com/subject/36310054/",
+      "casts": [
+        "杨洋",
+        "章若楠",
+        "方逸伦",
+        "张予曦",
+        "岳旸"
+      ],
+      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2932378070.jpg",
+      "id": "36310054",
+      "cover_y": 4345,
+      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2932283308.jpg",
+      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2932283308.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932283308/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932283308/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2932283308.jpg' -o '2932283308.jpg'"
+    },
+    {
+      "directors": [
+        "杨荔钠"
+      ],
+      "rate": "8.2",
+      "cover_x": 5908,
+      "star": "40",
+      "title": "我，许可",
+      "url": "https://movie.douban.com/subject/37332784/",
+      "casts": [
+        "文淇",
+        "秦海璐",
+        "白客",
+        "李雪琴",
+        "牛莉"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2932103692.jpg",
+      "id": "37332784",
+      "cover_y": 8268,
+      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2930952928.jpg",
+      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2930952928.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2930952928/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2930952928/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2930952928.jpg' -o '2930952928.jpg'"
     }
   ]
 }
