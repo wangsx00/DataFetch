@@ -10,6 +10,7 @@ const USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/
 const ACCEPT_LANGUAGE = "zh-CN,zh;q=0.9,en;q=0.8";
 const CURL_RETRY_LIMIT = 3;
 const LOG_ENABLED = true;
+const DOUBAN_COOKIE = (process.env.DOUBAN_COOKIE || "").trim();
 
 // 默认配置
 const DEFAULT_TYPE = "movie"; // movie | tv
@@ -36,6 +37,11 @@ function curl(args) {
   throw new Error("curl 最终失败");
 }
 
+function appendCookieArgs(args) {
+  if (!DOUBAN_COOKIE) return args;
+  return [...args, "-H", `Cookie: ${DOUBAN_COOKIE}`];
+}
+
 function parseLocation(headers) {
   const match = headers.match(/^Location:\s*(\S+)/im);
   return match ? match[1] : null;
@@ -58,6 +64,12 @@ function safePreview(text, length = 160) {
 }
 
 function parseHotResponse(responseText, sourceLabel) {
+  if (/error code:\s*008/i.test(responseText)) {
+    throw new Error(
+      `${sourceLabel} 要求登录（error code: 008）。请在环境变量 DOUBAN_COOKIE 中提供已登录的豆瓣 Cookie 后重试。`,
+    );
+  }
+
   let parsed;
   try {
     parsed = JSON.parse(responseText);
@@ -99,13 +111,13 @@ function ensureSession(cookieJar) {
   const testUrl = `https://movie.douban.com/j/new_search_subjects?sort=U&range=0,10&tags=&playable=1&start=0&year_range=${currentYear},${currentYear}&limit=1`;
   logStep("检查会话有效性...");
 
-  const headersAndBody = spawnSync("curl", [
+  const headersAndBody = spawnSync("curl", appendCookieArgs([
     "--http1.1", "-sS", "-D", "-", "-c", cookieJar, "-b", cookieJar,
     "-H", `User-Agent: ${USER_AGENT}`,
     "-H", `Accept-Language: ${ACCEPT_LANGUAGE}`,
     "-H", "Referer: https://movie.douban.com/explore",
     testUrl
-  ], { encoding: "utf8" }).stdout;
+  ]), { encoding: "utf8" }).stdout;
 
   const secUrl = parseLocation(headersAndBody);
   if (!secUrl) {
@@ -115,19 +127,19 @@ function ensureSession(cookieJar) {
 
   logStep(`触发安全验证: ${secUrl}`);
 
-  const challengeHtml = curl([
+  const challengeHtml = curl(appendCookieArgs([
     "--http1.1", "-sS", "-b", cookieJar, "-c", cookieJar,
     "-H", `User-Agent: ${USER_AGENT}`,
     "-H", `Accept-Language: ${ACCEPT_LANGUAGE}`,
     "-H", "Referer: https://movie.douban.com/explore",
     secUrl
-  ]);
+  ]));
   const { tok, cha, red } = parseChallengeHtml(challengeHtml);
 
   logStep("正在计算 PoW...");
   const sol = solvePow(cha);
 
-  curl([
+  curl(appendCookieArgs([
     "--http1.1", "-sS", "-L", "-b", cookieJar, "-c", cookieJar,
     "https://sec.douban.com/c",
     "-H", `User-Agent: ${USER_AGENT}`,
@@ -138,7 +150,7 @@ function ensureSession(cookieJar) {
     "--data-urlencode", `cha=${cha}`,
     "--data-urlencode", `sol=${sol}`,
     "--data-urlencode", `red=${red}`
-  ]);
+  ]));
   logStep("验证通过");
 }
 
@@ -162,7 +174,7 @@ function buildRequestUrl(options) {
 function fetchHotDataFromUrl(url, cookieJar) {
   logStep(`抓取数据，URL: ${url}`);
 
-  const headersAndBody = curl([
+  const headersAndBody = curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-D",
@@ -178,7 +190,7 @@ function fetchHotDataFromUrl(url, cookieJar) {
     "-H",
     "Referer: https://movie.douban.com/explore",
     url
-  ]);
+  ]));
 
   const { headers, body } = splitHeadersAndBody(headersAndBody);
   const secUrl = parseLocation(headers);
@@ -194,6 +206,7 @@ async function fetchHotData(options) {
   const cookieJar = path.join(tempDir, "cookies.txt");
 
   try {
+    logStep(`DOUBAN_COOKIE ${DOUBAN_COOKIE ? "已配置" : "未配置"}`);
     ensureSession(cookieJar);
     const url = buildRequestUrl(options);
     return fetchHotDataFromUrl(url, cookieJar);

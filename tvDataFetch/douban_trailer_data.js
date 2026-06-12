@@ -12,6 +12,7 @@ const ACCEPT_LANGUAGE = "zh-CN,zh;q=0.9,en;q=0.8";
 const LOG_ENABLED = true;
 const CURL_RETRY_LIMIT = 4;
 const CURL_RETRY_DELAY_MS = 1500;
+const DOUBAN_COOKIE = (process.env.DOUBAN_COOKIE || "").trim();
 
 function logStep(message) {
   if (!LOG_ENABLED) return;
@@ -25,6 +26,11 @@ function sleepMs(ms) {
 
 function shellQuote(value) {
   return `'${String(value).replace(/'/g, `'\"'\"'`)}'`;
+}
+
+function appendCookieArgs(args) {
+  if (!DOUBAN_COOKIE) return args;
+  return [...args, "-H", `Cookie: ${DOUBAN_COOKIE}`];
 }
 
 function usage() {
@@ -193,7 +199,7 @@ function makeSession(subjectId) {
 
   logStep(`[${subjectId}] 建立预告片会话，访问 trailer 页`);
 
-  const headersAndBody = curl([
+  const headersAndBody = curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-D",
@@ -207,7 +213,7 @@ function makeSession(subjectId) {
     `Accept-Language: ${ACCEPT_LANGUAGE}`,
     "-H",
     `Referer: ${subjectReferer}`,
-  ]);
+  ]));
 
   const secUrl = parseLocation(headersAndBody);
   if (!secUrl) {
@@ -217,7 +223,7 @@ function makeSession(subjectId) {
 
   logStep(`[${subjectId}] trailer 页触发豆瓣校验，开始获取挑战页`);
 
-  const challengeHtml = curl([
+  const challengeHtml = curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-b",
@@ -231,13 +237,13 @@ function makeSession(subjectId) {
     `Accept-Language: ${ACCEPT_LANGUAGE}`,
     "-H",
     `Referer: ${baseUrl}`,
-  ]);
+  ]));
 
   const { tok, cha, red } = parseChallengeHtml(challengeHtml);
   logStep(`[${subjectId}] 开始求解 trailer challenge`);
   const sol = solvePow(cha);
 
-  curl([
+  curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-L",
@@ -262,14 +268,14 @@ function makeSession(subjectId) {
     `sol=${sol}`,
     "--data-urlencode",
     `red=${red}`,
-  ]);
+  ]));
 
   logStep(`[${subjectId}] trailer 会话校验通过`);
   return { cookieJar, baseUrl, tempDir, subjectReferer };
 }
 
 function fetchHtml(url, session, referer) {
-  return curl([
+  return curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-b",
@@ -283,7 +289,7 @@ function fetchHtml(url, session, referer) {
     `Accept-Language: ${ACCEPT_LANGUAGE}`,
     "-H",
     `Referer: ${referer}`,
-  ]);
+  ]));
 }
 
 function parseTrailerList(html) {
@@ -488,6 +494,7 @@ async function main() {
   const args = parseArgs(process.argv.slice(2));
   const results = [];
   processSubject.debugDir = args.debugDir;
+  logStep(`DOUBAN_COOKIE ${DOUBAN_COOKIE ? "已配置" : "未配置"}`);
 
   for (const subjectId of args.ids) {
     results.push(await processSubject(subjectId));

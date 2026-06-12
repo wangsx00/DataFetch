@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # 赋予提交代码的权限
+    env:
+      DOUBAN_COOKIE: ${{ secrets.DOUBAN_COOKIE }}
 
     steps:
       - name: Checkout code
@@ -28,6 +30,11 @@ jobs:
           echo "Workspace: $GITHUB_WORKSPACE"
           echo "Node version: $(node -v)"
           echo "NPM version: $(npm -v)"
+          if [ -n "$DOUBAN_COOKIE" ]; then
+            echo "DOUBAN_COOKIE: configured"
+          else
+            echo "DOUBAN_COOKIE: not configured"
+          fi
           echo "Repository root:"
           ls -la
           echo "tvDataFetch directory:"

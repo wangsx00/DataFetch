@@ -20,6 +20,7 @@ const CURL_RETRY_LIMIT = 4;
 const CURL_RETRY_DELAY_MS = 1500;
 const DEFAULT_SORTBY = "size";
 const ASPECT_DIFF_THRESHOLD = 0.3;
+const DOUBAN_COOKIE = (process.env.DOUBAN_COOKIE || "").trim();
 
 function shellQuote(value) {
   return `'${String(value).replace(/'/g, `'\"'\"'`)}'`;
@@ -33,6 +34,11 @@ function logStep(message) {
 
 function sleepMs(ms) {
   Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+}
+
+function appendCookieArgs(args) {
+  if (!DOUBAN_COOKIE) return args;
+  return [...args, "-H", `Cookie: ${DOUBAN_COOKIE}`];
 }
 
 function usage() {
@@ -209,7 +215,7 @@ function makeSession(subjectId) {
 
   logStep(`[${subjectId}] 建立会话，访问 all_photos`);
 
-  const headersAndBody = curl([
+  const headersAndBody = curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-D",
@@ -223,7 +229,7 @@ function makeSession(subjectId) {
     `Accept-Language: ${ACCEPT_LANGUAGE}`,
     "-H",
     `Referer: https://movie.douban.com/subject/${subjectId}/`,
-  ]);
+  ]));
 
   const secUrl = parseLocation(headersAndBody);
   if (!secUrl) {
@@ -233,7 +239,7 @@ function makeSession(subjectId) {
 
   logStep(`[${subjectId}] 触发豆瓣校验，开始获取挑战页`);
 
-  const challengeHtml = curl([
+  const challengeHtml = curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-b",
@@ -247,14 +253,14 @@ function makeSession(subjectId) {
     `Accept-Language: ${ACCEPT_LANGUAGE}`,
     "-H",
     `Referer: ${baseUrl}`,
-  ]);
+  ]));
 
   const { tok, cha, red } = parseChallengeHtml(challengeHtml);
   logStep(`[${subjectId}] 开始求解校验 challenge`);
   const sol = solvePow(cha);
   logStep(`[${subjectId}] 校验求解完成，提交 challenge`);
 
-  curl([
+  curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-L",
@@ -279,7 +285,7 @@ function makeSession(subjectId) {
     `sol=${sol}`,
     "--data-urlencode",
     `red=${red}`,
-  ]);
+  ]));
 
   logStep(`[${subjectId}] 会话校验通过`);
 
@@ -287,7 +293,7 @@ function makeSession(subjectId) {
 }
 
 function fetchHtml(url, session, referer) {
-  return curl([
+  return curl(appendCookieArgs([
     "--http1.1",
     "-sS",
     "-b",
@@ -301,7 +307,7 @@ function fetchHtml(url, session, referer) {
     `Accept-Language: ${ACCEPT_LANGUAGE}`,
     "-H",
     `Referer: ${referer}`,
-  ]);
+  ]));
 }
 
 function parseCategoryCounts(allPhotosHtml) {
@@ -554,6 +560,7 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  logStep(`DOUBAN_COOKIE ${DOUBAN_COOKIE ? "已配置" : "未配置"}`);
   logStep(
     `任务开始，条目数=${args.ids.length}，目标比例=${args.ratioArg}(${args.ratio})，并发=${args.concurrency}，排序=${args.sortby}`,
   );
