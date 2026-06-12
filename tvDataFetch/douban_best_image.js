@@ -10,16 +10,16 @@ const USER_AGENT =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
 const ACCEPT_LANGUAGE = "zh-CN,zh;q=0.9,en;q=0.8";
 const CATEGORY_PRIORITY = [
-  { code: "R", name: "poster", label: "海报" },
   { code: "W", name: "wallpaper", label: "壁纸" },
   { code: "S", name: "screenshot", label: "剧照" },
+  { code: "R", name: "poster", label: "海报" },
 ];
 const PAGE_SIZE = 30;
 const LOG_ENABLED = true;
 const CURL_RETRY_LIMIT = 4;
 const CURL_RETRY_DELAY_MS = 1500;
 const DEFAULT_SORTBY = "size";
-const ASPECT_DIFF_THRESHOLD = 0.5;
+const ASPECT_DIFF_THRESHOLD = 0.2;
 
 function shellQuote(value) {
   return `'${String(value).replace(/'/g, `'\"'\"'`)}'`;

@@ -46,6 +46,15 @@ async function main() {
     });
     const bestImageData = JSON.parse(bestImageRaw);
 
+    // --- 步骤 3: 获取预告片播放地址 ---
+    log(`正在执行: node douban_trailer_data.js ${idsString}`);
+    const trailerRaw = execSync(`node douban_trailer_data.js ${idsString}`, {
+      encoding: "utf8",
+      maxBuffer: 20 * 1024 * 1024,
+      stdio: ["inherit", "pipe", "inherit"]
+    });
+    const trailerData = JSON.parse(trailerRaw);
+
     // 建立 ID 到图片信息的映射表
     const imageMap = {};
     if (bestImageData && bestImageData.results) {
@@ -56,13 +65,30 @@ async function main() {
       });
     }
 
-    // --- 步骤 3: 合并数据 ---
+    // 建立 ID 到预告片信息的映射表
+    const trailerMap = {};
+    if (trailerData && trailerData.results) {
+      trailerData.results.forEach(res => {
+        if (res.trailer) {
+          trailerMap[res.subjectId] = res.trailer;
+        }
+      });
+    }
+
+    // --- 步骤 4: 合并数据 ---
     log("正在合并数据...");
     const finalData = jsonList.map(item => {
       const bestImg = imageMap[item.id];
+      const trailer = trailerMap[item.id];
       let horizontal_cover = null;
       let horizontal_cover_composed = null;
       let download_command = null;
+      let trailer_page_url = null;
+      let trailer_detail_url = null;
+      let trailer_title = null;
+      let trailer_video_url = null;
+      let trailer_video_composed = null;
+      let trailer_download_command = null;
 
       if (bestImg) {
         // 重组前：原始 URL
@@ -75,11 +101,28 @@ async function main() {
         download_command = bestImg.downloadCommand;
       }
 
+      if (trailer) {
+        trailer_page_url = trailer.pageUrl || null;
+        trailer_detail_url = trailer.detailUrl || null;
+        trailer_title = trailer.title || null;
+        trailer_video_url = trailer.videoUrl || null;
+        trailer_video_composed = trailer_video_url
+          ? `${trailer_video_url}@User-Agent=${trailer.userAgent}@Referer=${trailer.referer}`
+          : null;
+        trailer_download_command = trailer.downloadCommand || null;
+      }
+
       const newItem = {
         ...item,
         horizontal_cover,           // 重组前
         horizontal_cover_composed,  // 重组后
-        download_command            // 下载命令
+        download_command,           // 下载命令
+        trailer_page_url,
+        trailer_detail_url,
+        trailer_title,
+        trailer_video_url,
+        trailer_video_composed,
+        trailer_download_command
       };
 
       // 去除冗余的详情对象
@@ -88,7 +131,7 @@ async function main() {
       return newItem;
     });
 
-    // --- 步骤 4: 写出文件 ---
+    // --- 步骤 5: 写出文件 ---
     const outputPath = path.join(__dirname, "douban_hot_json");
     // 增加前置处理，将数组包装在 data 字段中，以匹配 DoubanResponse 模型
     const wrappedData = {
