@@ -19,7 +19,7 @@ const LOG_ENABLED = true;
 const CURL_RETRY_LIMIT = 4;
 const CURL_RETRY_DELAY_MS = 1500;
 const DEFAULT_SORTBY = "size";
-const ASPECT_DIFF_THRESHOLD = 0.3;
+const ASPECT_DIFF_THRESHOLD = 0.1;
 const DOUBAN_COOKIE = (process.env.DOUBAN_COOKIE || "").trim();
 
 function shellQuote(value) {
