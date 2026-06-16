@@ -177,6 +177,18 @@ async function main() {
     const wrappedData = { data: finalData };
     fs.writeFileSync(outputPath, JSON.stringify(wrappedData, null, 2), "utf8");
 
+    // --- 步骤 7: 将生成的 JSON 上传到 GitHub Release ---
+    if (GITHUB_REPOSITORY) {
+      try {
+        log("正在将最终 JSON 上传到 GitHub Release...");
+        // 使用 --clobber 覆盖旧版本，确保 assets 里的永远是最新的
+        execSync(`gh release upload assets ${shellQuote(outputPath)} --clobber`, { stdio: 'inherit' });
+        log("JSON 上传成功！");
+      } catch (e) {
+        log(`JSON 上传失败: ${e.message}`);
+      }
+    }
+
     log(`✨ 处理流程全部结束！`);
     log(`- 原始条目数: ${jsonList.length}`);
     log(`- 输出本地文件: ${outputPath}`);
