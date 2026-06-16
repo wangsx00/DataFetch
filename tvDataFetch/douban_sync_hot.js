@@ -8,12 +8,18 @@ const path = require("path");
  * 这是一个集成脚本，用于自动化处理流程：
  * 1. 抓取热门列表
  * 2. 为列表中的每个条目抓取最佳 16:9 横向封面
- * 3. 合并数据并输出到文件
+ * 3. 获取预告片元数据
+ * 4. 将视频资源转储到 GitHub Releases (永久链接)
+ * 5. 合并所有数据并输出到文件
  */
 
 function log(msg) {
   const time = new Date().toISOString().replace("T", " ").slice(0, 19);
   console.log(`[${time}] ${msg}`);
+}
+
+function shellQuote(value) {
+  return `'${String(value).replace(/'/g, `'\"'\"'`)}'`;
 }
 
 function logError(error) {
@@ -27,11 +33,10 @@ function logError(error) {
 async function main() {
   try {
     // --- 步骤 1: 获取热门数据 ---
-    log("正在获取豆瓣热门列表 (node douban_hot_data.js)...");
-    const hotDataRaw = execSync("node douban_hot_data_python.js --limit 20", {
-//    const hotDataRaw = execSync("node douban_hot_data.js --limit 20", {
+    log("正在获取豆瓣热门列表 (node douban_hot_data_python.js)...");
+    const hotDataRaw = execSync("node douban_hot_data_python.js --limit 2", {
       encoding: "utf8",
-      stdio: ["inherit", "pipe", "inherit"] // 允许 stderr 日志打印到控制台
+      stdio: ["inherit", "pipe", "inherit"]
     });
     const jsonList = JSON.parse(hotDataRaw);
 
@@ -41,22 +46,20 @@ async function main() {
     }
 
     const ids = jsonList.map(item => item.id);
-    log(`成功获取 ${ids.length} 个条目，准备提取横向封面...`);
+    log(`成功获取 ${ids.length} 个条目，准备提取封面与预告片...`);
 
     // --- 步骤 2: 获取横向封面 (16:9) ---
-    // 我们一次性把所有 ID 传给 douban_best_image.js，它内部会串行处理
     const idsString = ids.join(" ");
-    log(`正在执行: node douban_best_image.js --ratio 16:9 ${idsString}`);
-
+    log(`正在提取最佳 16:9 封面...`);
     const bestImageRaw = execSync(`node douban_best_image.js --ratio 16:9 ${idsString}`, {
       encoding: "utf8",
-      maxBuffer: 50 * 1024 * 1024, // 增加缓冲区防止结果过大
-      stdio: ["inherit", "pipe", "inherit"] // 允许 stderr 日志实时打印到控制台
+      maxBuffer: 50 * 1024 * 1024,
+      stdio: ["inherit", "pipe", "inherit"]
     });
     const bestImageData = JSON.parse(bestImageRaw);
 
     // --- 步骤 3: 获取预告片播放地址 ---
-    log(`正在执行: node douban_trailer_data.js ${idsString}`);
+    log(`正在提取预告片原始地址...`);
     const trailerRaw = execSync(`node douban_trailer_data.js ${idsString}`, {
       encoding: "utf8",
       maxBuffer: 20 * 1024 * 1024,
@@ -64,31 +67,60 @@ async function main() {
     });
     const trailerData = JSON.parse(trailerRaw);
 
-    // 建立 ID 到图片信息的映射表
+    // 建立映射表
     const imageMap = {};
     if (bestImageData && bestImageData.results) {
       bestImageData.results.forEach(res => {
-        if (res.image) {
-          imageMap[res.subjectId] = res.image;
-        }
+        if (res.image) imageMap[res.subjectId] = res.image;
       });
     }
 
-    // 建立 ID 到预告片信息的映射表
     const trailerMap = {};
     if (trailerData && trailerData.results) {
       trailerData.results.forEach(res => {
-        if (res.trailer) {
-          trailerMap[res.subjectId] = res.trailer;
-        }
+        if (res.trailer) trailerMap[res.subjectId] = res.trailer;
       });
     }
 
     log(`横版封面匹配数: ${Object.keys(imageMap).length}`);
     log(`预告片匹配数: ${Object.keys(trailerMap).length}`);
 
-    // --- 步骤 4: 合并数据 ---
-    log("正在合并数据...");
+    const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
+
+    // --- 步骤 4: 独立转储视频到 GitHub Releases ---
+    if (GITHUB_REPOSITORY) {
+      log("开始处理视频转储到 GitHub Releases...");
+      for (const item of jsonList) {
+        const trailer = trailerMap[item.id];
+        if (trailer && trailer.videoUrl) {
+          const fileName = `${item.id}_trailer.mp4`;
+          const localPath = path.join(__dirname, fileName);
+          try {
+            log(`[${item.id}] 正在下载并上传视频: ${trailer.videoUrl}`);
+
+            // 1. 下载视频到本地 (使用 -L 跟随重定向)
+            execSync(`curl -L -H ${shellQuote(`Referer: ${trailer.referer}`)} -H ${shellQuote(`User-Agent: ${trailer.userAgent}`)} ${shellQuote(trailer.videoUrl)} -o "${localPath}"`, { stdio: 'inherit' });
+
+            // 2. 上传到 GitHub Release (使用 --clobber 覆盖同名文件)
+            execSync(`gh release upload assets "${localPath}#${fileName}" --clobber`, { stdio: 'inherit' });
+
+            // 3. 成功后更新映射表中的 URL 为 GitHub 永久链接
+            trailer.videoUrl = `https://github.com/${GITHUB_REPOSITORY}/releases/download/assets/${fileName}`;
+            log(`[${item.id}] 转储成功: ${trailer.videoUrl}`);
+          } catch (e) {
+            log(`[${item.id}] 视频转储失败，保留原始链接。错误: ${e.message}`);
+            // 失败时 trailer.videoUrl 保持原样，即原始豆瓣链接
+          } finally {
+            if (fs.existsSync(localPath)) fs.unlinkSync(localPath);
+          }
+        }
+      }
+    } else {
+      log("未检测到 GITHUB_REPOSITORY 环境变量，跳过视频转储。");
+    }
+
+    // --- 步骤 5: 合并数据 (不再包含 I/O 操作) ---
+    log("正在合并最终数据...");
     const finalData = jsonList.map(item => {
       const bestImg = imageMap[item.id];
       const trailer = trailerMap[item.id];
@@ -103,13 +135,8 @@ async function main() {
       let trailer_download_command = null;
 
       if (bestImg) {
-        // 重组前：原始 URL
         horizontal_cover = bestImg.imageUrl || bestImg.thumbUrl;
-
-        // 重组后：按照 mapDoubanToMediaItems 要求的复合格式
         horizontal_cover_composed = `${horizontal_cover}@User-Agent=${bestImg.userAgent}@Referer=${bestImg.referer}`;
-
-        // 提取下载命令
         download_command = bestImg.downloadCommand;
       }
 
@@ -118,17 +145,21 @@ async function main() {
         trailer_detail_url = trailer.detailUrl || null;
         trailer_title = trailer.title || null;
         trailer_video_url = trailer.videoUrl || null;
-        trailer_video_composed = trailer_video_url
-          ? `${trailer_video_url}@User-Agent=${trailer.userAgent}@Referer=${trailer.referer}`
-          : null;
         trailer_download_command = trailer.downloadCommand || null;
+
+        // 根据最终的链接生成复合格式
+        trailer_video_composed = trailer_video_url
+          ? (trailer_video_url.includes('github.com')
+              ? trailer_video_url // GitHub 链接直接使用，无需 UA/Referer
+              : `${trailer_video_url}@User-Agent=${trailer.userAgent}@Referer=${trailer.referer}`)
+          : null;
       }
 
       const newItem = {
         ...item,
-        horizontal_cover,           // 重组前
-        horizontal_cover_composed,  // 重组后
-        download_command,           // 下载命令
+        horizontal_cover,
+        horizontal_cover_composed,
+        download_command,
         trailer_page_url,
         trailer_detail_url,
         trailer_title,
@@ -137,23 +168,17 @@ async function main() {
         trailer_download_command
       };
 
-      // 去除冗余的详情对象
       delete newItem.best_image_detail;
-
       return newItem;
     });
 
-    // --- 步骤 5: 写出文件 ---
+    // --- 步骤 6: 写出文件 ---
     const outputPath = path.join(__dirname, "douban_hot_json");
-    // 增加前置处理，将数组包装在 data 字段中，以匹配 DoubanResponse 模型
-    const wrappedData = {
-      data: finalData
-    };
+    const wrappedData = { data: finalData };
     fs.writeFileSync(outputPath, JSON.stringify(wrappedData, null, 2), "utf8");
 
     log(`✨ 处理流程全部结束！`);
     log(`- 原始条目数: ${jsonList.length}`);
-    log(`- 成功匹配封面数: ${Object.keys(imageMap).length}`);
     log(`- 输出本地文件: ${outputPath}`);
 
   } catch (error) {
