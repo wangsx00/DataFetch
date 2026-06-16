@@ -29,7 +29,7 @@
       "trailer_title": "莫离 预告片2 (中文字幕)",
       "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/37234503_trailer.mp4",
       "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/37234503_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322567/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://vt1.doubanio.com/202606161143/52b12d1af180fcbf0b5155c80fd39159/view/movie/M/703220567.mp4' -o trailer.mp4"
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322567/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://vt1.doubanio.com/202606161204/03b62794f424e0b185862e7bbbad1115/view/movie/M/703220567.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -58,7 +58,7 @@
       "trailer_title": "主角 预告片 (中文字幕)",
       "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/35295564_trailer.mp4",
       "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/35295564_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324583/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://vt1.doubanio.com/202606161143/355091fd4255f01df6d49c79c7feb316/view/movie/M/703240583.mp4' -o trailer.mp4"
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324583/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://vt1.doubanio.com/202606161205/31c416337ebbafb6cc6679f404a7c0ac/view/movie/M/703240583.mp4' -o trailer.mp4"
     }
   ]
 }
