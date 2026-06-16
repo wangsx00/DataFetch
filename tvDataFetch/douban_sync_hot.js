@@ -34,7 +34,7 @@ async function main() {
   try {
     // --- 步骤 1: 获取热门数据 ---
     log("正在获取豆瓣热门列表 (node douban_hot_data_python.js)...");
-    const hotDataRaw = execSync("node douban_hot_data_python.js --limit 2", {
+    const hotDataRaw = execSync("node douban_hot_data_python.js --limit 20", {
       encoding: "utf8",
       stdio: ["inherit", "pipe", "inherit"]
     });
@@ -86,38 +86,6 @@ async function main() {
     log(`预告片匹配数: ${Object.keys(trailerMap).length}`);
 
     const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
-
-    // --- 步骤 4: 独立转储视频到 GitHub Releases ---
-    if (GITHUB_REPOSITORY) {
-      log("开始处理视频转储到 GitHub Releases...");
-      for (const item of jsonList) {
-        const trailer = trailerMap[item.id];
-        if (trailer && trailer.videoUrl) {
-          const fileName = `${item.id}_trailer.mp4`;
-          const localPath = path.join(__dirname, fileName);
-          try {
-            log(`[${item.id}] 正在下载并上传视频: ${trailer.videoUrl}`);
-
-            // 1. 下载视频到本地 (使用 -L 跟随重定向)
-            execSync(`curl -L -H ${shellQuote(`Referer: ${trailer.referer}`)} -H ${shellQuote(`User-Agent: ${trailer.userAgent}`)} ${shellQuote(trailer.videoUrl)} -o "${localPath}"`, { stdio: 'inherit' });
-
-            // 2. 上传到 GitHub Release (使用 --clobber 覆盖同名文件)
-            execSync(`gh release upload assets "${localPath}#${fileName}" --clobber`, { stdio: 'inherit' });
-
-            // 3. 成功后更新映射表中的 URL 为 GitHub 永久链接
-            trailer.videoUrl = `https://github.com/${GITHUB_REPOSITORY}/releases/download/assets/${fileName}`;
-            log(`[${item.id}] 转储成功: ${trailer.videoUrl}`);
-          } catch (e) {
-            log(`[${item.id}] 视频转储失败，保留原始链接。错误: ${e.message}`);
-            // 失败时 trailer.videoUrl 保持原样，即原始豆瓣链接
-          } finally {
-            if (fs.existsSync(localPath)) fs.unlinkSync(localPath);
-          }
-        }
-      }
-    } else {
-      log("未检测到 GITHUB_REPOSITORY 环境变量，跳过视频转储。");
-    }
 
     // --- 步骤 5: 合并数据 (不再包含 I/O 操作) ---
     log("正在合并最终数据...");
