@@ -35,33 +35,33 @@ async function main() {
 
   try {
     // --- 步骤 0: 清理 GitHub Release 中的旧视频资源 ---
-    if (GITHUB_REPOSITORY) {
-      try {
-        log("正在检查并清理 GitHub Release 中的旧视频资源 (*.mp4)...");
-        // 获取 Release 中所有的资源名称，使用 stdio: ['inherit', 'pipe', 'ignore'] 隐藏 stderr 避免干扰
-        const assetsOutput = execSync(`gh release view assets --json assets --jq '.assets[].name'`, {
-          encoding: 'utf8',
-          stdio: ['inherit', 'pipe', 'ignore']
-        });
+    // if (GITHUB_REPOSITORY) {
+    //   try {
+    //     log("正在检查并清理 GitHub Release 中的旧视频资源 (*.mp4)...");
+    //     // 获取 Release 中所有的资源名称，使用 stdio: ['inherit', 'pipe', 'ignore'] 隐藏 stderr 避免干扰
+    //     const assetsOutput = execSync(`gh release view assets --json assets --jq '.assets[].name'`, {
+    //       encoding: 'utf8',
+    //       stdio: ['inherit', 'pipe', 'ignore']
+    //     });
 
-        const mp4Assets = assetsOutput.split(/\s+/).filter(name =>
-          name.trim().toLowerCase().endsWith('.mp4')
-        );
+    //     const mp4Assets = assetsOutput.split(/\s+/).filter(name =>
+    //       name.trim().toLowerCase().endsWith('.mp4')
+    //     );
 
-        if (mp4Assets.length > 0) {
-          log(`发现 ${mp4Assets.length} 个旧视频资源，准备清理...`);
-          for (const assetName of mp4Assets) {
-            log(`正在清理旧资源: ${assetName}`);
-            execSync(`gh release delete-asset assets ${shellQuote(assetName)} -y`, { stdio: 'inherit' });
-          }
-          log("旧视频资源清理完成。");
-        } else {
-          log("未发现需要清理的视频资源。");
-        }
-      } catch (e) {
-        log("清理旧视频资源跳过 (Release 可能尚未创建，或当前处于本地环境)");
-      }
-    }
+    //     if (mp4Assets.length > 0) {
+    //       log(`发现 ${mp4Assets.length} 个旧视频资源，准备清理...`);
+    //       for (const assetName of mp4Assets) {
+    //         log(`正在清理旧资源: ${assetName}`);
+    //         execSync(`gh release delete-asset assets ${shellQuote(assetName)} -y`, { stdio: 'inherit' });
+    //       }
+    //       log("旧视频资源清理完成。");
+    //     } else {
+    //       log("未发现需要清理的视频资源。");
+    //     }
+    //   } catch (e) {
+    //     log("清理旧视频资源跳过 (Release 可能尚未创建，或当前处于本地环境)");
+    //   }
+    // }
 
     // --- 步骤 1: 获取热门数据 ---
     log("正在获取豆瓣热门列表 (node douban_hot_data_python.js)...");
