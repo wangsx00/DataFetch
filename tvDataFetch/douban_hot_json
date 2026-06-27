@@ -179,64 +179,6 @@
     },
     {
       "directors": [
-        "刘洪源"
-      ],
-      "rate": "7.0",
-      "cover_x": 2450,
-      "star": "35",
-      "title": "雨霖铃",
-      "url": "https://movie.douban.com/subject/36310054/",
-      "casts": [
-        "杨洋",
-        "章若楠",
-        "方逸伦",
-        "张予曦",
-        "岳旸"
-      ],
-      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2932378070.webp",
-      "id": "36310054",
-      "cover_y": 4345,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2913046836.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2913046836.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2913046836/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2913046836/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2913046836.jpg' -o '2913046836.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36310054/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/317790/",
-      "trailer_title": "雨霖铃 先行版 (中文字幕)",
-      "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/36310054_trailer.mp4",
-      "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/36310054_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/317790/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/36310054_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "肖麓西"
-      ],
-      "rate": "6.3",
-      "cover_x": 2000,
-      "star": "30",
-      "title": "我的妈耶",
-      "url": "https://movie.douban.com/subject/36217763/",
-      "casts": [
-        "马思纯",
-        "白客",
-        "黄明昊",
-        "孙阳",
-        "梁靖康"
-      ],
-      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2930427050.webp",
-      "id": "36217763",
-      "cover_y": 3000,
-      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2931700121.jpg",
-      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2931700121.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2931700121/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2931700121/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2931700121.jpg' -o '2931700121.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36217763/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/319403/",
-      "trailer_title": "我的妈耶 预告片3 (中文字幕)",
-      "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/36217763_trailer.mp4",
-      "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/36217763_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/319403/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/36217763_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "杨荔钠"
       ],
       "rate": "8.1",
@@ -263,6 +205,35 @@
       "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/37332784_trailer.mp4",
       "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/37332784_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323936/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/37332784_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "刘洪源"
+      ],
+      "rate": "7.0",
+      "cover_x": 2450,
+      "star": "35",
+      "title": "雨霖铃",
+      "url": "https://movie.douban.com/subject/36310054/",
+      "casts": [
+        "杨洋",
+        "章若楠",
+        "方逸伦",
+        "张予曦",
+        "岳旸"
+      ],
+      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2932378070.webp",
+      "id": "36310054",
+      "cover_y": 4345,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2913046836.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2913046836.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2913046836/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2913046836/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2913046836.jpg' -o '2913046836.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36310054/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/317790/",
+      "trailer_title": "雨霖铃 先行版 (中文字幕)",
+      "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/36310054_trailer.mp4",
+      "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/36310054_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/317790/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/36310054_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -295,32 +266,32 @@
     },
     {
       "directors": [
-        "张艺谋"
+        "肖麓西"
       ],
-      "rate": "5.8",
-      "cover_x": 4000,
+      "rate": "6.3",
+      "cover_x": 2000,
       "star": "30",
-      "title": "惊蛰无声",
-      "url": "https://movie.douban.com/subject/37242440/",
+      "title": "我的妈耶",
+      "url": "https://movie.douban.com/subject/36217763/",
       "casts": [
-        "易烊千玺",
-        "朱一龙",
-        "宋佳",
-        "雷佳音",
-        "杨幂"
+        "马思纯",
+        "白客",
+        "黄明昊",
+        "孙阳",
+        "梁靖康"
       ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2929759786.webp",
-      "id": "37242440",
-      "cover_y": 6000,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2929197284.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2929197284.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2929197284/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2929197284/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2929197284.jpg' -o '2929197284.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37242440/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/323554/",
-      "trailer_title": "惊蛰无声 其它预告片：“间谍在身边”特别视频 (中文字幕)",
-      "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/37242440_trailer.mp4",
-      "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/37242440_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323554/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/37242440_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2930427050.webp",
+      "id": "36217763",
+      "cover_y": 3000,
+      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2931700121.jpg",
+      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2931700121.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2931700121/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2931700121/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2931700121.jpg' -o '2931700121.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36217763/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/319403/",
+      "trailer_title": "我的妈耶 预告片3 (中文字幕)",
+      "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/36217763_trailer.mp4",
+      "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/36217763_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/319403/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/36217763_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -350,6 +321,35 @@
       "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/26970929_trailer.mp4",
       "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/26970929_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325042/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/26970929_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "张艺谋"
+      ],
+      "rate": "5.8",
+      "cover_x": 4000,
+      "star": "30",
+      "title": "惊蛰无声",
+      "url": "https://movie.douban.com/subject/37242440/",
+      "casts": [
+        "易烊千玺",
+        "朱一龙",
+        "宋佳",
+        "雷佳音",
+        "杨幂"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2929759786.webp",
+      "id": "37242440",
+      "cover_y": 6000,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2929197284.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2929197284.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2929197284/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2929197284/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2929197284.jpg' -o '2929197284.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37242440/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/323554/",
+      "trailer_title": "惊蛰无声 其它预告片：“间谍在身边”特别视频 (中文字幕)",
+      "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/37242440_trailer.mp4",
+      "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/37242440_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323554/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/37242440_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -412,6 +412,64 @@
     },
     {
       "directors": [
+        "陈烨"
+      ],
+      "rate": "8.1",
+      "cover_x": 3508,
+      "star": "40",
+      "title": "一人之下 第六季",
+      "url": "https://movie.douban.com/subject/36999777/",
+      "casts": [
+        "曹云图",
+        "小连杀",
+        "藤新",
+        "图特哈蒙",
+        "高增志"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2928119906.webp",
+      "id": "36999777",
+      "cover_y": 5255,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2928839696.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2928839696.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2928839696/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2928839696/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2928839696.jpg' -o '2928839696.jpg'",
+      "trailer_page_url": null,
+      "trailer_detail_url": null,
+      "trailer_title": null,
+      "trailer_video_url": null,
+      "trailer_video_composed": null,
+      "trailer_download_command": null
+    },
+    {
+      "directors": [
+        "黎志"
+      ],
+      "rate": "7.8",
+      "cover_x": 2731,
+      "star": "40",
+      "title": "问心2",
+      "url": "https://movie.douban.com/subject/36675848/",
+      "casts": [
+        "赵又廷",
+        "毛晓彤",
+        "金世佳",
+        "张佳宁",
+        "陈冲"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933401946.webp",
+      "id": "36675848",
+      "cover_y": 4500,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2933597443.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2933597443.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2933597443/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2933597443/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2933597443.jpg' -o '2933597443.jpg'",
+      "trailer_page_url": null,
+      "trailer_detail_url": null,
+      "trailer_title": null,
+      "trailer_video_url": null,
+      "trailer_video_composed": null,
+      "trailer_download_command": null
+    },
+    {
+      "directors": [
         "邢键钧",
         "路云飞"
       ],
@@ -439,35 +497,6 @@
       "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/36449703_trailer.mp4",
       "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/36449703_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324815/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/36449703_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "陈烨"
-      ],
-      "rate": "8.1",
-      "cover_x": 3508,
-      "star": "40",
-      "title": "一人之下 第六季",
-      "url": "https://movie.douban.com/subject/36999777/",
-      "casts": [
-        "曹云图",
-        "小连杀",
-        "藤新",
-        "图特哈蒙",
-        "高增志"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2928119906.webp",
-      "id": "36999777",
-      "cover_y": 5255,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2928839696.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2928839696.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2928839696/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2928839696/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2928839696.jpg' -o '2928839696.jpg'",
-      "trailer_page_url": null,
-      "trailer_detail_url": null,
-      "trailer_title": null,
-      "trailer_video_url": null,
-      "trailer_video_composed": null,
-      "trailer_download_command": null
     },
     {
       "directors": [
@@ -500,32 +529,32 @@
     },
     {
       "directors": [
-        "黎志"
+        "盖·里奇"
       ],
-      "rate": "7.8",
-      "cover_x": 2731,
-      "star": "40",
-      "title": "问心2",
-      "url": "https://movie.douban.com/subject/36675848/",
+      "rate": "6.1",
+      "cover_x": 1400,
+      "star": "30",
+      "title": "金谍行动",
+      "url": "https://movie.douban.com/subject/36396335/",
       "casts": [
-        "赵又廷",
-        "毛晓彤",
-        "金世佳",
-        "张佳宁",
-        "陈冲"
+        "亨利·卡维尔",
+        "杰克·吉伦哈尔",
+        "艾莎·冈萨雷斯",
+        "卡洛斯·巴登",
+        "迈克尔·武"
       ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933401946.webp",
-      "id": "36675848",
-      "cover_y": 4500,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2933554676.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2933554676.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2933554676/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2933554676/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2933554676.jpg' -o '2933554676.jpg'",
-      "trailer_page_url": null,
-      "trailer_detail_url": null,
-      "trailer_title": null,
-      "trailer_video_url": null,
-      "trailer_video_composed": null,
-      "trailer_download_command": null
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933012346.webp",
+      "id": "36396335",
+      "cover_y": 2100,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2933415726.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2933415726.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2933415726/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2933415726/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2933415726.jpg' -o '2933415726.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36396335/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/323942/",
+      "trailer_title": "金谍行动 预告片2",
+      "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/36396335_trailer.mp4",
+      "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/36396335_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323942/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/36396335_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -555,35 +584,6 @@
       "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/35159709_trailer.mp4",
       "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/35159709_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323678/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/35159709_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "盖·里奇"
-      ],
-      "rate": "6.1",
-      "cover_x": 1400,
-      "star": "30",
-      "title": "金谍行动",
-      "url": "https://movie.douban.com/subject/36396335/",
-      "casts": [
-        "亨利·卡维尔",
-        "杰克·吉伦哈尔",
-        "艾莎·冈萨雷斯",
-        "卡洛斯·巴登",
-        "迈克尔·武"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2933012346.webp",
-      "id": "36396335",
-      "cover_y": 2100,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2933415726.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2933415726.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2933415726/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2933415726/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2933415726.jpg' -o '2933415726.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36396335/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/323942/",
-      "trailer_title": "金谍行动 预告片2",
-      "trailer_video_url": "https://github.com/wangsx00/DataFetch/releases/download/assets/36396335_trailer.mp4",
-      "trailer_video_composed": "https://github.com/wangsx00/DataFetch/releases/download/assets/36396335_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323942/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://github.com/wangsx00/DataFetch/releases/download/assets/36396335_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
