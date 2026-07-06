@@ -9,7 +9,7 @@ const path = require("path");
  * 1. 抓取热门列表
  * 2. 为列表中的每个条目抓取最佳 16:9 横向封面
  * 3. 获取预告片元数据
- * 4. 将视频资源转储到 GitHub Releases (永久链接)
+ * 4. 将视频资源准备到 assets 目录 (用于同步到 assets 分支)
  * 5. 合并所有数据并输出到文件
  */
 
@@ -34,33 +34,10 @@ async function main() {
   const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
 
   try {
-    // --- 步骤 0: 清理 GitHub Release 中的旧视频资源 ---
-    if (GITHUB_REPOSITORY) {
-      try {
-        log("正在检查并清理 GitHub Release 中的旧视频资源 (*.mp4)...");
-        // 获取 Release 中所有的资源名称，使用 stdio: ['inherit', 'pipe', 'ignore'] 隐藏 stderr 避免干扰
-        const assetsOutput = execSync(`gh release view assets --json assets --jq '.assets[].name'`, {
-          encoding: 'utf8',
-          stdio: ['inherit', 'pipe', 'ignore']
-        });
-
-        const mp4Assets = assetsOutput.split(/\s+/).filter(name =>
-          name.trim().toLowerCase().endsWith('.mp4')
-        );
-
-        if (mp4Assets.length > 0) {
-          log(`发现 ${mp4Assets.length} 个旧视频资源，准备清理...`);
-          for (const assetName of mp4Assets) {
-            log(`正在清理旧资源: ${assetName}`);
-            execSync(`gh release delete-asset assets ${shellQuote(assetName)} -y`, { stdio: 'inherit' });
-          }
-          log("旧视频资源清理完成。");
-        } else {
-          log("未发现需要清理的视频资源。");
-        }
-      } catch (e) {
-        log("清理旧视频资源跳过 (Release 可能尚未创建，或当前处于本地环境)");
-      }
+    // --- 步骤 0: 确保 assets 目录存在 ---
+    const assetsDir = path.join(__dirname, "assets");
+    if (!fs.existsSync(assetsDir)) {
+      fs.mkdirSync(assetsDir, { recursive: true });
     }
 
     // --- 步骤 1: 获取热门数据 ---
@@ -146,7 +123,7 @@ async function main() {
 
         // 根据最终的链接生成复合格式
         trailer_video_composed = trailer_video_url
-          ? (trailer_video_url.includes('github.com')
+          ? (trailer_video_url.includes('github.com') || trailer_video_url.includes('githubusercontent.com')
               ? trailer_video_url // GitHub 链接直接使用，无需 UA/Referer
               : `${trailer_video_url}@User-Agent=${trailer.userAgent}@Referer=${trailer.referer}`)
           : null;
@@ -169,21 +146,17 @@ async function main() {
       return newItem;
     });
 
-    // --- 步骤 6: 写出文件 ---
+    // --- 步骤 6: 写出文件 (同时输出到 assets 目录供同步) ---
     const outputPath = path.join(__dirname, "douban_hot_json");
+    const assetsOutputPath = path.join(__dirname, "assets", "douban_hot_json");
     const wrappedData = { data: finalData };
     fs.writeFileSync(outputPath, JSON.stringify(wrappedData, null, 2), "utf8");
+    fs.writeFileSync(assetsOutputPath, JSON.stringify(wrappedData, null, 2), "utf8");
 
-    // --- 步骤 7: 将生成的 JSON 上传到 GitHub Release ---
+    // --- 步骤 7: 提示准备同步 ---
     if (GITHUB_REPOSITORY) {
-      try {
-        log("正在将最终 JSON 上传到 GitHub Release...");
-        // 使用 --clobber 覆盖旧版本，确保 assets 里的永远是最新的
-        execSync(`gh release upload assets ${shellQuote(outputPath)} --clobber`, { stdio: 'inherit' });
-        log("JSON 上传成功！");
-      } catch (e) {
-        log(`JSON 上传失败: ${e.message}`);
-      }
+      log(`✨ 处理流程结束，数据与资源已就绪在 assets/ 目录。`);
+      log(`请将该目录内容推送到项目的 assets 孤儿分支。`);
     }
 
     log(`✨ 处理流程全部结束！`);

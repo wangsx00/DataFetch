@@ -19,10 +19,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Ensure Assets Release
-        run: |
-          gh release view assets || gh release create assets --notes "Storage for movie trailers and images" --target main
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -77,10 +73,27 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
+          # 1. 提交数据 JSON 变更到主分支
           git add tvDataFetch/douban_hot_json
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No data changes to commit"
           else
             git commit -m "chore: update douban hot data"
             git push
+          fi
+
+          # 2. 强制覆盖更新 assets 孤儿分支
+          # 将生成的视频和图片资源推送到专门的资源分支
+          if [ -d "tvDataFetch/assets" ]; then
+            echo "正在同步资源到 assets 分支..."
+            cd tvDataFetch/assets
+            git init
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add .
+            git commit -m "deploy: update static assets [skip ci]"
+            git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:assets
+          else
+            echo "未找到 assets 目录，跳过资源同步。"
           fi

@@ -430,14 +430,14 @@ function buildDownloadCommand(videoUrl, referer) {
 }
 
 /**
- * 调用外部脚本将视频上传到 GitHub Release 并获取永久链接
+ * 调用外部脚本将视频准备到 assets 目录并获取永久链接
  */
-function uploadToGithubRelease(subjectId, videoUrl, referer) {
+function uploadToGithubAssets(subjectId, videoUrl, referer) {
   const GITHUB_REPOSITORY = process.env.GITHUB_REPOSITORY;
   if (!GITHUB_REPOSITORY) return videoUrl;
 
   try {
-    logStep(`[${subjectId}] 触发上传到 GitHub Release...`);
+    logStep(`[${subjectId}] 触发下载并准备同步到 assets 分支...`);
     const uploadScript = path.join(__dirname, "github_release_upload.js");
     const result = spawnSync("node", [
       uploadScript,
@@ -451,7 +451,7 @@ function uploadToGithubRelease(subjectId, videoUrl, referer) {
       return result.stdout.trim();
     }
   } catch (e) {
-    logStep(`[${subjectId}] 上传脚本调用失败: ${e.message}`);
+    logStep(`[${subjectId}] 脚本调用失败: ${e.message}`);
   }
   return videoUrl;
 }
@@ -486,15 +486,15 @@ async function processSubject(subjectId) {
       let videoUrl = parseTrailerDetail(detailHtml);
       if (videoUrl) {
         logStep(`[${subjectId}] 最终视频链接: ${videoUrl}`);
-        // --- 核心修改：在此处立即执行上传 ---
-        videoUrl = uploadToGithubRelease(subjectId, videoUrl, trailer.detailUrl);
+        // --- 核心修改：在此处立即执行资源准备 ---
+        videoUrl = uploadToGithubAssets(subjectId, videoUrl, trailer.detailUrl);
 
         const detailTitle = parseTrailerDetailTitle(detailHtml);
         const selectedTitle = trailer.title || detailTitle || null;
         if (!selectedTitle) {
           logStep(`[${subjectId}] 已提取到视频直链，但标题提取失败，按成功处理`);
         }
-        logStep(`[${subjectId}] github转存视频链接: ${videoUrl}`);
+        logStep(`[${subjectId}] assets 资源链接: ${videoUrl}`);
         return {
           subjectId,
           trailer: {

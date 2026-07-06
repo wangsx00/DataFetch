@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require("path");
 
 /**
- * 独立工具脚本：下载视频并上传到 GitHub Release
+ * 独立工具脚本：下载视频并准备同步到 GitHub assets 分支
  * 参数: subjectId, videoUrl, referer, userAgent
  */
 
@@ -15,7 +15,7 @@ function shellQuote(value) {
 
 function log(msg) {
   const time = new Date().toISOString().replace("T", " ").slice(0, 19);
-  console.error(`[Upload] [${time}] ${msg}`);
+  console.error(`[Assets] [${time}] ${msg}`);
 }
 
 async function upload() {
@@ -34,26 +34,27 @@ async function upload() {
   }
 
   const fileName = `${subjectId}_trailer.mp4`;
-  const localPath = path.join(__dirname, fileName);
+  // 将资源保存到项目根目录下的 assets 文件夹，后续由主脚本统一处理
+  const assetsDir = path.join(process.cwd(), "assets");
+  if (!fs.existsSync(assetsDir)) {
+    fs.mkdirSync(assetsDir, { recursive: true });
+  }
+  const localPath = path.join(assetsDir, fileName);
 
   try {
-    log(`[${subjectId}] 正在下载并上传到 Release: ${videoUrl}`);
+    log(`[${subjectId}] 正在下载预告片: ${videoUrl}`);
 
     // 1. 下载 (使用 -s 隐藏进度条，避免干扰 stdout)
     execSync(`curl -L -s -H ${shellQuote(`Referer: ${referer}`)} -H ${shellQuote(`User-Agent: ${userAgent}`)} ${shellQuote(videoUrl)} -o "${localPath}"`, { stdio: 'inherit' });
 
-    // 2. 上传 (将 gh 的 stdout 重定向到 stderr，防止干扰调用者捕获 URL)
-    execSync(`gh release upload assets "${localPath}#${fileName}" --clobber`, { stdio: ['inherit', 2, 'inherit'] });
-
-    // 3. 构造并输出 GitHub 永久链接到 stdout，供调用者捕获
-    const permanentUrl = `https://github.com/${GITHUB_REPOSITORY}/releases/download/assets/${fileName}`;
+    // 2. 构造并输出 GitHub Raw 永久链接到 stdout，供调用者捕获
+    // 假设孤儿分支名为 assets
+    const permanentUrl = `https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/assets/${fileName}`;
     process.stdout.write(permanentUrl);
-    log(`[${subjectId}] 上传完成: ${permanentUrl}`);
+    log(`[${subjectId}] 资源已就绪: ${permanentUrl}`);
   } catch (e) {
-    log(`[${subjectId}] 转储失败，回退到原始链接。错误: ${e.message}`);
+    log(`[${subjectId}] 下载失败，回退到原始链接。错误: ${e.message}`);
     process.stdout.write(videoUrl);
-  } finally {
-    if (fs.existsSync(localPath)) fs.unlinkSync(localPath);
   }
 }
 
