@@ -70,8 +70,9 @@ async function upload() {
 
           // 使用 ffmpeg 压缩
           // -b:v 指定视频码率，-bufsize 设置缓冲区防止码率大幅波动，-maxrate 限制峰值
+          // 移除 stdio: 'ignore'，让 ffmpeg 的日志和错误能输出到 stderr
           execSync(`ffmpeg -y -i "${localPath}" -c:v libx264 -b:v ${targetBitrate} -pass 1 -an -f mp4 /dev/null && \
-                    ffmpeg -y -i "${localPath}" -c:v libx264 -b:v ${targetBitrate} -pass 2 -c:a aac -b:a 128k "${compressedPath}"`, { stdio: 'ignore' });
+                    ffmpeg -y -i "${localPath}" -c:v libx264 -b:v ${targetBitrate} -pass 2 -c:a aac -b:a 128k "${compressedPath}"`, { stdio: 'inherit' });
 
           if (fs.existsSync(compressedPath)) {
             const newStats = fs.statSync(compressedPath);

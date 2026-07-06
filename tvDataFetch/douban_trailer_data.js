@@ -445,7 +445,11 @@ function uploadToGithubAssets(subjectId, videoUrl, referer) {
       videoUrl,
       referer,
       USER_AGENT
-    ], { encoding: "utf8", env: process.env });
+    ], {
+      encoding: "utf8",
+      env: process.env,
+      stdio: ["inherit", "pipe", "inherit"] // 重点：允许子进程直接输出 stderr 到主进程
+    });
 
     if (result.status === 0 && result.stdout) {
       return result.stdout.trim();
