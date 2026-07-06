@@ -61,18 +61,24 @@ async function upload() {
         const duration = parseFloat(execSync(`ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "${localPath}"`).toString().trim());
 
         if (duration > 0) {
-          // 目标设定为 19MB 以留出余量，计算目标码率 (bits per second)
-          // 码率 = (目标字节 * 8) / 时长
-          const targetSizeBits = 19 * 1024 * 1024 * 8;
-          const targetBitrate = Math.floor(targetSizeBits / duration);
+          // 目标设定为 19MB 以留出余量，计算总比特数
+          const totalTargetSizeBits = 19 * 1024 * 1024 * 8;
+          const audioBitrate = 128000; // 128kbps
+          const audioSizeBits = audioBitrate * duration;
 
-          log(`[${subjectId}] 视频时长: ${duration}s, 目标码率: ${Math.floor(targetBitrate / 1000)}k`);
+          // 视频可用比特 = 总比特 - 音频比特
+          const videoSizeBits = Math.max(totalTargetSizeBits - audioSizeBits, 1024 * 1024 * 8); // 至少留 1MB 给视频
+          const targetVideoBitrate = Math.floor(videoSizeBits / duration);
 
-          // 使用 ffmpeg 压缩
-          // -b:v 指定视频码率，-bufsize 设置缓冲区防止码率大幅波动，-maxrate 限制峰值
-          // 移除 stdio: 'ignore'，让 ffmpeg 的日志和错误能输出到 stderr
-          execSync(`ffmpeg -y -i "${localPath}" -c:v libx264 -b:v ${targetBitrate} -pass 1 -an -f mp4 /dev/null && \
-                    ffmpeg -y -i "${localPath}" -c:v libx264 -b:v ${targetBitrate} -pass 2 -c:a aac -b:a 128k "${compressedPath}"`, { stdio: 'inherit' });
+          log(`[${subjectId}] 视频时长: ${duration}s, 目标视频码率: ${Math.floor(targetVideoBitrate / 1000)}k`);
+
+          // 使用 ffmpeg 2-pass 压缩，配合 maxrate 和 bufsize 严格控制体积
+          const ffmpegCommand = [
+            `ffmpeg -y -i "${localPath}" -c:v libx264 -b:v ${targetVideoBitrate} -maxrate ${targetVideoBitrate} -bufsize ${targetVideoBitrate * 2} -pass 1 -an -f mp4 /dev/null`,
+            `ffmpeg -y -i "${localPath}" -c:v libx264 -b:v ${targetVideoBitrate} -maxrate ${targetVideoBitrate} -bufsize ${targetVideoBitrate * 2} -pass 2 -c:a aac -b:a 128k "${compressedPath}"`
+          ].join(" && ");
+
+          execSync(ffmpegCommand, { stdio: 'inherit' });
 
           if (fs.existsSync(compressedPath)) {
             const newStats = fs.statSync(compressedPath);
