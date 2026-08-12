@@ -5,6 +5,7 @@ const fs = require("node:fs");
 const os = require("node:os");
 const path = require("node:path");
 const { spawnSync } = require("node:child_process");
+const aiVision = require("./ai_vision");
 
 const USER_AGENT =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
@@ -54,6 +55,8 @@ function usage() {
       "  --concurrency <n>   Detail page concurrency, default 6",
       `  --sortby <value>    Category page sort, like/size/time, default ${DEFAULT_SORTBY}`,
       "  --pretty            Pretty-print JSON output",
+      "  --ai                Enable AI vision content filtering (needs GEMINI_API_KEY/OPENAI_API_KEY)",
+      "  --no-ai             Disable AI vision content filtering",
     ].join("\n"),
   );
 }
@@ -65,6 +68,7 @@ function parseArgs(argv) {
   let concurrency = 6;
   let sortby = DEFAULT_SORTBY;
   let pretty = false;
+  let ai = "auto";
 
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
@@ -78,6 +82,10 @@ function parseArgs(argv) {
       sortby = argv[++i];
     } else if (arg === "--pretty") {
       pretty = true;
+    } else if (arg === "--ai") {
+      ai = true;
+    } else if (arg === "--no-ai") {
+      ai = false;
     } else if (arg === "--help" || arg === "-h") {
       usage();
       process.exit(0);
@@ -121,6 +129,7 @@ function parseArgs(argv) {
     concurrency,
     sortby,
     pretty,
+    ai,
   };
 }
 
@@ -353,6 +362,26 @@ function parsePhotoDetail(detailHtml) {
   };
 }
 
+/**
+ * 抓取豆瓣条目页的影视标题，供 AI 评分时识别作品归属。
+ * 依次尝试 og:title、h1、title 标签；失败返回 null。
+ */
+function fetchSubjectTitle(subjectId, session) {
+  try {
+    const url = `https://movie.douban.com/subject/${subjectId}/`;
+    const html = fetchHtml(url, session, "https://movie.douban.com/");
+    const og = html.match(/property="og:title"\s+content="([^"]+)"/);
+    if (og) return og[1].trim();
+    const h1 = html.match(/<h1>\s*<span[^>]*>([^<]+)<\/span>/);
+    if (h1) return h1[1].trim();
+    const t = html.match(/<title>([^<]+)<\/title>/);
+    if (t) return t[1].replace(/\s*\(豆瓣\)\s*/, "").trim();
+  } catch (err) {
+    logStep(`[${subjectId}] 获取标题失败: ${err.message}`);
+  }
+  return null;
+}
+
 function aspectDiff(width, height, targetRatio) {
   return Math.abs(width / height - targetRatio);
 }
@@ -410,6 +439,9 @@ async function chooseBestForCategory(
   session,
   counts,
   sortby,
+  aiConfig,
+  useAi,
+  title,
 ) {
   const categoryUrl =
     `https://movie.douban.com/subject/${subjectId}/photos?type=${category.code}` +
@@ -421,29 +453,106 @@ async function chooseBestForCategory(
     `[${subjectId}] 按优先级尝试类目 ${category.label}，共 ${count} 张，目标比例 ${targetRatio}，排序=${sortby}`,
   );
 
-  const photos = fetchCategoryPhotos(subjectId, category.code, count, session, sortby);
+  // 候选来源：AI 模式用截图过滤，否则用全部列表候选
+  let candidates;
+  let aiJudgements = null;
+  // index -> AI 判断结果，供后续候选关联评分与审计
+  const aiJudgeMap = new Map();
+
+  if (useAi && aiConfig && aiConfig.enabled && title) {
+    logStep(`[${subjectId}] ${category.label} AI 模式：准备截图列表页并过滤`);
+    let captured = null;
+    try {
+      // 惰性加载，避免非 AI 模式下因缺少 puppeteer 而崩溃
+      const { captureCategoryPage } = require("./page_screenshot");
+      captured = await captureCategoryPage({
+        subjectId,
+        categoryCode: category.code,
+        sortby,
+        cookie: DOUBAN_COOKIE,
+        userAgent: USER_AGENT,
+      });
+    } catch (err) {
+      logStep(`[${subjectId}] ${category.label} 截图模块异常: ${err.message}`);
+      captured = { screenshotBuffer: null, mapping: [], blocked: true };
+    }
+
+    if (captured.blocked || !captured.screenshotBuffer || captured.mapping.length === 0) {
+      logStep(`[${subjectId}] ${category.label} 截图失败/被拦，回退纯比例算法`);
+      candidates = fetchCategoryPhotos(subjectId, category.code, count, session, sortby);
+    } else {
+      // 调用视觉模型对整页截图按序号打分
+      aiJudgements = aiVision.scoreScreenshot({
+        subjectId,
+        title,
+        totalCount: captured.mapping.length,
+        screenshotBuffer: captured.screenshotBuffer,
+        config: aiConfig,
+      });
+
+      // 汇总 AI 判断：收集适合项序号，并建立 index -> 判断 映射
+      const suitableSet = new Set();
+      if (aiJudgements) {
+        for (const j of aiJudgements) {
+          aiJudgeMap.set(j.index, j);
+          if (j.suitable) suitableSet.add(j.index);
+        }
+        logStep(
+          `[${subjectId}] ${category.label} AI 判定：适合 ${suitableSet.size}/${aiJudgements.length}`,
+        );
+      }
+
+      // 将截图映射项转为详情页候选对象（detailUrl 由 photoId 构造）
+      const toCandidate = (m) => ({
+        photoId: m.photoId,
+        detailUrl: `https://movie.douban.com/photos/photo/${m.photoId}/`,
+        thumbUrl: null,
+        _aiIndex: m.index,
+      });
+
+      if (suitableSet.size > 0) {
+        candidates = captured.mapping
+          .filter((m) => m.photoId && suitableSet.has(m.index))
+          .map(toCandidate);
+        logStep(
+          `[${subjectId}] ${category.label} AI 筛选通过 ${candidates.length}/${captured.mapping.length}`,
+        );
+      } else {
+        logStep(`[${subjectId}] ${category.label} AI 无适合项，回退全部候选`);
+        candidates = captured.mapping.filter((m) => m.photoId).map(toCandidate);
+      }
+    }
+  } else {
+    candidates = fetchCategoryPhotos(subjectId, category.code, count, session, sortby);
+  }
+
   let processed = 0;
-  const progressStep = Math.max(1, Math.floor(photos.length / 10));
+  const progressStep = Math.max(1, Math.floor(candidates.length / 10));
   let best = null;
 
-  for (const photo of photos) {
+  for (const photo of candidates) {
     const html = fetchHtml(photo.detailUrl, session, categoryUrl);
     const parsed = parsePhotoDetail(html);
     processed += 1;
-    if (processed === 1 || processed === photos.length || processed % progressStep === 0) {
+    if (processed === 1 || processed === candidates.length || processed % progressStep === 0) {
       logStep(
-        `[${subjectId}] ${category.label}详情进度 ${processed}/${photos.length}`,
+        `[${subjectId}] ${category.label}详情进度 ${processed}/${candidates.length}`,
       );
     }
     if (!parsed) {
       continue;
     }
 
+    // 关联 AI 评分（仅截图模式候选带 _aiIndex，否则为 null）
+    const aiInfo = photo._aiIndex != null ? aiJudgeMap.get(photo._aiIndex) : null;
     const candidate = {
       ...photo,
       ...parsed,
       aspectRatio: parsed.width / parsed.height,
       diff: aspectDiff(parsed.width, parsed.height, targetRatio),
+      // AI 内容评分与理由，便于调试与结果审计
+      aiScore: aiInfo ? aiInfo.score : null,
+      aiReason: aiInfo ? aiInfo.reason : null,
     };
 
     if (!best || candidate.diff < best.diff) {
@@ -482,7 +591,7 @@ async function chooseBestForCategory(
   };
 }
 
-async function processSubject(subjectId, targetRatio, concurrency, sortby) {
+async function processSubject(subjectId, targetRatio, concurrency, sortby, aiConfig, useAi) {
   logStep(`[${subjectId}] 开始处理条目`);
   const session = makeSession(subjectId);
   try {
@@ -491,6 +600,13 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby) {
     logStep(
       `[${subjectId}] 类目统计 poster=${counts.R}, wallpaper=${counts.W}, screenshot=${counts.S}`,
     );
+
+    // AI 模式需要影视标题，作为视觉模型判断作品归属的依据
+    let title = null;
+    if (useAi && aiConfig && aiConfig.enabled) {
+      title = fetchSubjectTitle(subjectId, session);
+      logStep(`[${subjectId}] 影视标题: ${title || "未知"}`);
+    }
 
     for (const category of CATEGORY_PRIORITY) {
       if (!counts[category.code]) continue;
@@ -501,6 +617,9 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby) {
         session,
         counts,
         sortby,
+        aiConfig,
+        useAi,
+        title,
       );
       if (result) {
         return {
@@ -533,7 +652,10 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby) {
             diff: result.selected.diff,
             matchedByThreshold: result.matchedByThreshold,
             threshold: ASPECT_DIFF_THRESHOLD,
+            aiScore: result.selected.aiScore ?? null,
+            aiReason: result.selected.aiReason ?? null,
           },
+          aiUsed: useAi,
         };
       }
     }
@@ -551,6 +673,7 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby) {
       },
       targetRatio,
       image: null,
+      aiUsed: useAi,
     };
   } finally {
     logStep(`[${subjectId}] 清理临时会话文件`);
@@ -560,7 +683,13 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  // AI 视觉过滤开关：auto 时按是否配置 key 自动启用，--ai/--no-ai 可强制
+  const aiConfig = aiVision.getConfig();
+  const useAi = args.ai === "auto" ? aiConfig.enabled : !!args.ai;
   logStep(`DOUBAN_COOKIE ${DOUBAN_COOKIE ? "已配置" : "未配置"}`);
+  logStep(
+    `AI 视觉过滤: ${useAi ? `启用 (provider=${aiConfig.provider}, model=${aiConfig.model})` : "未启用"}`,
+  );
   logStep(
     `任务开始，条目数=${args.ids.length}，目标比例=${args.ratioArg}(${args.ratio})，并发=${args.concurrency}，排序=${args.sortby}`,
   );
@@ -572,6 +701,8 @@ async function main() {
       args.ratio,
       args.concurrency,
       args.sortby,
+      aiConfig,
+      useAi,
     );
     results.push(result);
   }

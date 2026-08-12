@@ -14,6 +14,9 @@ jobs:
     env:
       DOUBAN_COOKIE: ${{ secrets.DOUBAN_COOKIE }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      AI_PROVIDER: gemini
+      AI_VISION_MODEL: gemini-2.5-flash
 
     steps:
       - name: Checkout code
@@ -36,11 +39,21 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
+          sudo apt-get install -y libnss3 libnspr4 libatk1.0-0 libatk-bridge2.0-0 \
+            libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxfixes3 \
+            libxrandr2 libgbm1 || true
+          sudo apt-get install -y libasound2 || sudo apt-get install -y libasound2t64 || true
 
       - name: Install Python Dependencies
         run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install -r tvDataFetch/requirements.txt
+
+      - name: Install Node Dependencies (puppeteer)
+        working-directory: ./tvDataFetch
+        run: |
+          npm install
+          npx puppeteer browsers install chrome
 
       - name: Log Environment
         run: |
@@ -54,6 +67,11 @@ jobs:
             echo "DOUBAN_COOKIE: configured"
           else
             echo "DOUBAN_COOKIE: not configured"
+          fi
+          if [ -n "$GEMINI_API_KEY" ]; then
+            echo "GEMINI_API_KEY: configured"
+          else
+            echo "GEMINI_API_KEY: not configured"
           fi
           echo "Repository root:"
           ls -la

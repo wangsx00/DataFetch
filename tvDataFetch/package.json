@@ -1,0 +1,9 @@
+{
+  "name": "tvdatafetch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "豆瓣热门影视数据抓取与同步",
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}
