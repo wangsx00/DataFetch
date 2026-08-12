@@ -608,6 +608,8 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby, aiCon
       logStep(`[${subjectId}] 影视标题: ${title || "未知"}`);
     }
 
+    let bestFallback = null;
+
     for (const category of CATEGORY_PRIORITY) {
       if (!counts[category.code]) continue;
       const result = await chooseBestForCategory(
@@ -621,43 +623,56 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby, aiCon
         useAi,
         title,
       );
+
       if (result) {
-        return {
-          subjectId,
-          matchedCategory: result.category,
-          matchedCategoryLabel: result.categoryLabel,
-          categoryCounts: {
-            poster: counts.R,
-            wallpaper: counts.W,
-            screenshot: counts.S,
-          },
-          targetRatio,
-          image: {
-            photoId: result.selected.photoId,
-            openUrl: result.selected.detailUrl,
-            detailUrl: result.selected.detailUrl,
-            imageUrl: result.selected.imageUrl || result.selected.thumbUrl,
-            referer: result.selected.detailUrl,
-            userAgent: USER_AGENT,
-            downloadCommand: [
-              "curl -L",
-              `-H ${shellQuote(`Referer: ${result.selected.detailUrl}`)}`,
-              `-H ${shellQuote(`User-Agent: ${USER_AGENT}`)}`,
-              shellQuote(result.selected.imageUrl || result.selected.thumbUrl),
-              `-o ${shellQuote(`${result.selected.photoId}.jpg`)}`,
-            ].join(" "),
-            width: result.selected.width,
-            height: result.selected.height,
-            aspectRatio: result.selected.aspectRatio,
-            diff: result.selected.diff,
-            matchedByThreshold: result.matchedByThreshold,
-            threshold: ASPECT_DIFF_THRESHOLD,
-            aiScore: result.selected.aiScore ?? null,
-            aiReason: result.selected.aiReason ?? null,
-          },
-          aiUsed: useAi,
-        };
+        if (result.matchedByThreshold) {
+          bestFallback = result;
+          break; // 找到满足阈值的图片，直接中断类目遍历
+        }
+        // 如果没有命中阈值，则将此图加入到候选对比，记录所有类目中 diff 最小的那个
+        if (!bestFallback || result.selected.diff < bestFallback.selected.diff) {
+          bestFallback = result;
+        }
       }
+    }
+
+    if (bestFallback) {
+      const result = bestFallback;
+      return {
+        subjectId,
+        matchedCategory: result.category,
+        matchedCategoryLabel: result.categoryLabel,
+        categoryCounts: {
+          poster: counts.R,
+          wallpaper: counts.W,
+          screenshot: counts.S,
+        },
+        targetRatio,
+        image: {
+          photoId: result.selected.photoId,
+          openUrl: result.selected.detailUrl,
+          detailUrl: result.selected.detailUrl,
+          imageUrl: result.selected.imageUrl || result.selected.thumbUrl,
+          referer: result.selected.detailUrl,
+          userAgent: USER_AGENT,
+          downloadCommand: [
+            "curl -L",
+            `-H ${shellQuote(`Referer: ${result.selected.detailUrl}`)}`,
+            `-H ${shellQuote(`User-Agent: ${USER_AGENT}`)}`,
+            shellQuote(result.selected.imageUrl || result.selected.thumbUrl),
+            `-o ${shellQuote(`${result.selected.photoId}.jpg`)}`,
+          ].join(" "),
+          width: result.selected.width,
+          height: result.selected.height,
+          aspectRatio: result.selected.aspectRatio,
+          diff: result.selected.diff,
+          matchedByThreshold: result.matchedByThreshold,
+          threshold: ASPECT_DIFF_THRESHOLD,
+          aiScore: result.selected.aiScore ?? null,
+          aiReason: result.selected.aiReason ?? null,
+        },
+        aiUsed: useAi,
+      };
     }
 
     logStep(`[${subjectId}] 三个类目都没有可用结果`);
