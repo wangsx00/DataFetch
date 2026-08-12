@@ -266,9 +266,14 @@ function scoreScreenshot({ subjectId, title, totalCount, screenshotBuffer, confi
   }
 
   const imageMime = "image/png";
-  const imageBase64 = screenshotBuffer.toString("base64");
+  // puppeteer 在部分版本/平台返回 Uint8Array 而非 Buffer，
+  // Uint8Array.toString("base64") 不生效（会返回逗号分隔的字节），故统一转 Buffer
+  const imageBuf = Buffer.isBuffer(screenshotBuffer)
+    ? screenshotBuffer
+    : Buffer.from(screenshotBuffer);
+  const imageBase64 = imageBuf.toString("base64");
   logStep(
-    `[${subjectId}] 调用 ${config.provider} (${config.model}) 评分，截图 ${(screenshotBuffer.length / 1024).toFixed(0)}KB`,
+    `[${subjectId}] 调用 ${config.provider} (${config.model}) 评分，截图 ${(imageBuf.length / 1024).toFixed(0)}KB`,
   );
 
   let results = null;

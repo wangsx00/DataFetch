@@ -117,7 +117,11 @@ async function captureCategoryPage({ subjectId, categoryCode, sortby, cookie, us
     // 等待角标渲染
     await new Promise((resolve) => setTimeout(resolve, 400));
 
-    const screenshotBuffer = await page.screenshot({ fullPage: true, type: "png" });
+    const rawScreenshot = await page.screenshot({ fullPage: true, type: "png" });
+    // 统一转为 Buffer，兼容 puppeteer 返回 Uint8Array 的情况
+    const screenshotBuffer = Buffer.isBuffer(rawScreenshot)
+      ? rawScreenshot
+      : Buffer.from(rawScreenshot);
     logStep(`[${subjectId}] 截图完成，共 ${mapping.length} 张缩略图，体积 ${(screenshotBuffer.length / 1024).toFixed(0)}KB`);
 
     return { screenshotBuffer, mapping, blocked: false };
