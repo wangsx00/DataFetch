@@ -24,7 +24,7 @@ const os = require("node:os");
 const path = require("node:path");
 const { spawnSync } = require("node:child_process");
 
-const DEFAULT_GEMINI_MODEL = "gemini-2.5-flash";
+const DEFAULT_GEMINI_MODEL = "gemini-3.6-flash";
 const DEFAULT_OPENAI_MODEL = "gpt-4o-mini";
 const DEFAULT_GEMINI_BASE_URL = "https://generativelanguage.googleapis.com";
 const DEFAULT_OPENAI_BASE_URL = "https://api.openai.com/v1";
@@ -77,6 +77,7 @@ function buildPrompt(title, count) {
   return [
     `你是一位影视封面选图助手。下面是影视《${title}》的豆瓣图片列表页截图，共 ${count} 张缩略图，每张左上角有红色数字序号(1 到 ${count})。`,
     "请判断哪些序号对应的图片适合作为该影视在点播应用中的横版(16:9)封面。",
+    "如果某张图片的红色序号因模糊无法辨认，请直接忽略该图片，不要凭空捏造序号。",
     "",
     "适合的标准：",
     "- 横向构图（宽略大于高更佳），可作为作品主视觉展示",
@@ -86,8 +87,9 @@ function buildPrompt(title, count) {
     "不适合的标准：",
     "- 竖版海报、纯人物大头特写、与作品无关的图",
     "- 画质极差、纯文字截图、明显正方形或竖向构图",
+    "- 带有视频硬字幕、播放器 UI 或明显平台水印的图片",
     "",
-    "请仅返回 JSON，不要输出任何其他内容：",
+    "请严格输出纯 JSON 字符串，不要输出任何其他内容，也不要使用任何 Markdown 代码块标记（如 ```json）：",
     `{"results":[{"index":1,"suitable":true,"score":5,"reason":"横版场景图，构图完整"}]}`,
     "对截图中能识别出的每个序号都给出判断，score 为 1-5 整数，5 最适合。",
   ].join("\n");
@@ -279,15 +281,32 @@ function scoreScreenshot({ subjectId, title, totalCount, screenshotBuffer, confi
   let results = null;
   try {
     if (config.provider === "gemini") {
-      results = callGemini({
-        apiKey: config.apiKey,
-        baseUrl: config.baseUrl,
-        model: config.model,
-        title,
-        count: totalCount,
-        imageBase64,
-        imageMime,
-      });
+      const geminiFallbackModels = [
+        "gemini-3.6-flash",
+        "gemini-3.5-flash",
+        "gemini-3-flash-preview",
+        "gemini-3.5-flash-lite"
+      ];
+      // 将 config.model 作为最高优先级，并合并备选模型列表（去重）
+      const candidateModels = Array.from(new Set([config.model, ...geminiFallbackModels]));
+
+      for (const m of candidateModels) {
+        logStep(`[${subjectId}] 尝试调用 Gemini 模型: ${m}`);
+        results = callGemini({
+          apiKey: config.apiKey,
+          baseUrl: config.baseUrl,
+          model: m,
+          title,
+          count: totalCount,
+          imageBase64,
+          imageMime,
+        });
+        
+        if (results !== null) {
+          break; // 成功获取结果，跳出循环
+        }
+        logStep(`[${subjectId}] 模型 ${m} 请求失败或无结果，尝试降级...`);
+      }
     } else {
       results = callOpenAI({
         apiKey: config.apiKey,
