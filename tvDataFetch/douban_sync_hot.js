@@ -7,10 +7,14 @@ const path = require("path");
 /**
  * 这是一个集成脚本，用于自动化处理流程：
  * 1. 抓取热门列表
- * 2. 为列表中的每个条目抓取最佳 16:9 横向封面
- * 3. 获取预告片元数据
- * 4. 将视频资源准备到 assets 目录 (用于同步到 assets 分支)
- * 5. 合并所有数据并输出到文件
+ * 2. 检查本地缓存 (douban_hot_json)，若命中则复用已有信息，跳过重复抓取
+ * 3. 为新上榜的剧集抓取最佳 16:9 横向封面 (包含 AI 评分过滤)
+ * 4. 获取新上榜剧集的预告片元数据，并将新视频下载到 assets 目录
+ * 5. 从线上拉取已命中缓存的旧预告片视频，确保本地资源完整 (用于直接同步到 assets 分支)
+ * 6. 合并所有数据(保留老图/老视频，更新最新评分)并输出最终文件
+ *
+ * 可选参数:
+ *   --no-cache    禁用缓存机制，强制对所有热门剧集重新抓取图片和视频资源
  */
 
 function log(msg) {
@@ -53,27 +57,78 @@ async function main() {
       return;
     }
 
-    const ids = jsonList.map(item => item.id);
-    log(`成功获取 ${ids.length} 个条目，准备提取封面与预告片...`);
+    // --- 步骤 1.5: 读取本地缓存 ---
+    const useCache = !process.argv.includes("--no-cache");
+    const cacheFile = path.join(__dirname, "douban_hot_json");
+    const cacheMap = {};
+    if (useCache && fs.existsSync(cacheFile)) {
+      try {
+        const cacheData = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
+        if (cacheData && Array.isArray(cacheData.data)) {
+          cacheData.data.forEach(c => { cacheMap[c.id] = c; });
+        }
+      } catch (e) {
+        log(`读取本地缓存失败: ${e.message}`);
+      }
+    }
 
-    // --- 步骤 2: 获取横向封面 (16:9) ---
-    const idsString = ids.join(" ");
-    log(`正在提取最佳 16:9 封面...`);
-    const bestImageRaw = execSync(`node douban_best_image.js --ratio 16:9 ${idsString}`, {
-      encoding: "utf8",
-      maxBuffer: 50 * 1024 * 1024,
-      stdio: ["inherit", "pipe", "inherit"]
+    const idsToFetch = [];
+    const cachedIds = [];
+    jsonList.forEach(item => {
+      if (!cacheMap[item.id]) {
+        idsToFetch.push(item.id);
+      } else {
+        cachedIds.push(item.id);
+      }
     });
-    const bestImageData = JSON.parse(bestImageRaw);
 
-    // --- 步骤 3: 获取预告片播放地址 ---
-    log(`正在提取预告片原始地址...`);
-    const trailerRaw = execSync(`node douban_trailer_data.js ${idsString}`, {
-      encoding: "utf8",
-      maxBuffer: 20 * 1024 * 1024,
-      stdio: ["inherit", "pipe", "inherit"]
-    });
-    const trailerData = JSON.parse(trailerRaw);
+    log(`总条目数: ${jsonList.length}，其中命中缓存 ${cachedIds.length} 个，需要新抓取 ${idsToFetch.length} 个`);
+
+    let bestImageData = { results: [] };
+    let trailerData = { results: [] };
+
+    if (idsToFetch.length > 0) {
+      const idsString = idsToFetch.join(" ");
+      
+      // --- 步骤 2: 获取横向封面 (16:9) ---
+      log(`正在提取最佳 16:9 封面...`);
+      const bestImageRaw = execSync(`node douban_best_image.js --ratio 16:9 ${idsString}`, {
+        encoding: "utf8",
+        maxBuffer: 50 * 1024 * 1024,
+        stdio: ["inherit", "pipe", "inherit"]
+      });
+      bestImageData = JSON.parse(bestImageRaw);
+
+      // --- 步骤 3: 获取预告片播放地址 ---
+      log(`正在提取预告片原始地址...`);
+      const trailerRaw = execSync(`node douban_trailer_data.js ${idsString}`, {
+        encoding: "utf8",
+        maxBuffer: 20 * 1024 * 1024,
+        stdio: ["inherit", "pipe", "inherit"]
+      });
+      trailerData = JSON.parse(trailerRaw);
+    }
+
+    // --- 步骤 3.5: 拉取命中缓存的旧视频资源 ---
+    if (cachedIds.length > 0) {
+      log(`正在拉取命中缓存的老预告片视频 (${cachedIds.length} 个)...`);
+      const assetsDir = path.join(__dirname, "assets");
+      cachedIds.forEach(id => {
+        const cachedItem = cacheMap[id];
+        if (cachedItem && cachedItem.trailer_video_url && cachedItem.trailer_video_url.includes('githubusercontent.com')) {
+          const videoUrl = cachedItem.trailer_video_url;
+          const localPath = path.join(assetsDir, `${id}_trailer.mp4`);
+          if (!fs.existsSync(localPath)) {
+            try {
+              log(`[${id}] 下载老视频复用: ${videoUrl}`);
+              execSync(`curl -L -s ${shellQuote(videoUrl)} -o ${shellQuote(localPath)}`);
+            } catch (e) {
+              log(`[${id}] 下载老视频失败: ${e.message}`);
+            }
+          }
+        }
+      });
+    }
 
     // 建立映射表
     const imageMap = {};
@@ -96,6 +151,14 @@ async function main() {
     // --- 步骤 5: 合并数据 (不再包含 I/O 操作) ---
     log("正在合并最终数据...");
     const finalData = jsonList.map(item => {
+      if (cacheMap[item.id]) {
+        // 如果命中缓存，保留缓存中的封面和预告片等信息，同时用最新的基础信息（如评分）覆盖
+        return {
+          ...cacheMap[item.id],
+          ...item
+        };
+      }
+
       const bestImg = imageMap[item.id];
       const trailer = trailerMap[item.id];
       let horizontal_cover = null;
