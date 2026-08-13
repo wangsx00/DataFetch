@@ -526,6 +526,15 @@ async function chooseBestForCategory(
     candidates = fetchCategoryPhotos(subjectId, category.code, count, session, sortby);
   }
 
+  // 根据 AI 打分从高到低对候选列表进行排序，确保高分图片被优先比对和提前命中
+  if (aiJudgeMap.size > 0) {
+    candidates.sort((a, b) => {
+      const scoreA = (a._aiIndex != null && aiJudgeMap.has(a._aiIndex)) ? aiJudgeMap.get(a._aiIndex).score : 0;
+      const scoreB = (b._aiIndex != null && aiJudgeMap.has(b._aiIndex)) ? aiJudgeMap.get(b._aiIndex).score : 0;
+      return scoreB - scoreA;
+    });
+  }
+
   let processed = 0;
   const progressStep = Math.max(1, Math.floor(candidates.length / 10));
   let best = null;
@@ -555,13 +564,22 @@ async function chooseBestForCategory(
       aiReason: aiInfo ? aiInfo.reason : null,
     };
 
-    if (!best || candidate.diff < best.diff) {
+    if (!best) {
       best = candidate;
+    } else {
+      const scoreCand = candidate.aiScore || 0;
+      const scoreBest = best.aiScore || 0;
+      if (scoreCand !== scoreBest) {
+        if (scoreCand > scoreBest) best = candidate;
+      } else if (candidate.diff < best.diff) {
+        best = candidate;
+      }
     }
 
-    if (candidate.diff < ASPECT_DIFF_THRESHOLD) {
+    const isAiSatisfied = candidate.aiScore == null || candidate.aiScore >= 4;
+    if (candidate.diff < ASPECT_DIFF_THRESHOLD && isAiSatisfied) {
       logStep(
-        `[${subjectId}] ${category.label}提前命中 photoId=${candidate.photoId} 尺寸=${candidate.width}x${candidate.height} diff=${candidate.diff} threshold=${ASPECT_DIFF_THRESHOLD}`,
+        `[${subjectId}] ${category.label}提前命中 photoId=${candidate.photoId} 尺寸=${candidate.width}x${candidate.height} diff=${candidate.diff} threshold=${ASPECT_DIFF_THRESHOLD} aiScore=${candidate.aiScore ?? "无"}`,
       );
       return {
         category: category.name,
@@ -579,7 +597,7 @@ async function chooseBestForCategory(
   }
 
   logStep(
-    `[${subjectId}] ${category.label}未命中 threshold=${ASPECT_DIFF_THRESHOLD}，回退到最接近图片 photoId=${best.photoId} 尺寸=${best.width}x${best.height} diff=${best.diff}`,
+    `[${subjectId}] ${category.label}未命中 threshold=${ASPECT_DIFF_THRESHOLD}，回退到最接近图片 photoId=${best.photoId} 尺寸=${best.width}x${best.height} diff=${best.diff} aiScore=${best.aiScore ?? "无"} url=${best.detailUrl}`,
   );
 
   return {
@@ -629,9 +647,17 @@ async function processSubject(subjectId, targetRatio, concurrency, sortby, aiCon
           bestFallback = result;
           break; // 找到满足阈值的图片，直接中断类目遍历
         }
-        // 如果没有命中阈值，则将此图加入到候选对比，记录所有类目中 diff 最小的那个
-        if (!bestFallback || result.selected.diff < bestFallback.selected.diff) {
+        // 如果没有命中阈值，则将此图加入到候选对比，优先比较 aiScore，如果 aiScore 相同再比较 diff
+        if (!bestFallback) {
           bestFallback = result;
+        } else {
+          const scoreResult = result.selected.aiScore || 0;
+          const scoreFallback = bestFallback.selected.aiScore || 0;
+          if (scoreResult !== scoreFallback) {
+            if (scoreResult > scoreFallback) bestFallback = result;
+          } else if (result.selected.diff < bestFallback.selected.diff) {
+            bestFallback = result;
+          }
         }
       }
     }

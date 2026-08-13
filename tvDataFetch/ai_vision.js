@@ -74,25 +74,17 @@ function randomTempName(prefix) {
  * 是否适合作为该影视的横版封面，并以 JSON 返回判断结果。
  */
 function buildPrompt(title, count) {
-  return [
-    `你是一位影视封面选图助手。下面是影视《${title}》的豆瓣图片列表页截图，共 ${count} 张缩略图，每张左上角有红色数字序号(1 到 ${count})。`,
-    "请判断哪些序号对应的图片适合作为该影视在点播应用中的横版(16:9)封面。",
-    "如果某张图片的红色序号因模糊无法辨认，请直接忽略该图片，不要凭空捏造序号。",
-    "",
-    "适合的标准：",
-    "- 横向构图（宽略大于高更佳），可作为作品主视觉展示",
-    "- 宣传性质：横版海报、官方剧照、场景图、概念图",
-    "- 内容能代表该影视，画面相对完整",
-    "",
-    "不适合的标准：",
-    "- 竖版海报、纯人物大头特写、与作品无关的图",
-    "- 画质极差、纯文字截图、明显正方形或竖向构图",
-    "- 带有视频硬字幕、播放器 UI 或明显平台水印的图片",
-    "",
-    "请严格输出纯 JSON 字符串，不要输出任何其他内容，也不要使用任何 Markdown 代码块标记（如 ```json）：",
-    `{"results":[{"index":1,"suitable":true,"score":5,"reason":"横版场景图，构图完整"}]}`,
-    "对截图中能识别出的每个序号都给出判断，score 为 1-5 整数，5 最适合。",
-  ].join("\n");
+  const promptPath = path.join(__dirname, "ai_vision_prompt.txt");
+  let template = "";
+  try {
+    template = fs.readFileSync(promptPath, "utf-8");
+  } catch (err) {
+    logStep(`无法读取 prompt 模板文件: ${err.message}`);
+    // 基础兜底，防止文件丢失导致流程崩溃
+    return `请判断下面截图中哪些带有红色序号(1到${count})的图片适合作为《${title}》的横版封面，以 JSON 格式返回。`;
+  }
+  
+  return template.replace(/\{title\}/g, title).replace(/\{count\}/g, count);
 }
 
 /** 从可能含多余文本的模型输出中提取首个 JSON 对象，失败返回 null。 */
