@@ -84,7 +84,7 @@ jobs:
           echo "Working directory: $(pwd)"
           echo "Starting sync script..."
           node douban_sync_hot.js
-#          node douban_sync_hot.js --no-cache
+          # node douban_sync_hot.js --no-cache
           echo "Sync script finished"
 
       - name: Log Output Summary
