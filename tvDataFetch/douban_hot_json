@@ -62,32 +62,35 @@
     },
     {
       "directors": [
-        "程伟豪"
+        "周星驰",
+        "秦鹏飞",
+        "林子聪",
+        "卢正雨"
       ],
-      "rate": "7.2",
-      "cover_x": 4370,
-      "star": "35",
-      "title": "消失的人",
-      "url": "https://movie.douban.com/subject/36965301/",
+      "rate": "6.3",
+      "cover_x": 1800,
+      "star": "30",
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
       "casts": [
-        "郑恺",
-        "刘浩存",
-        "邱泽",
-        "李晨",
-        "姜妍"
+        "张小斐",
+        "迪丽热巴",
+        "张艺兴",
+        "刘嘉玲",
+        "佐藤健"
       ],
-      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2931601069.webp",
-      "id": "36965301",
-      "cover_y": 6201,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932007983/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932007983/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg' -o '2932007983.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36965301/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/324162/",
-      "trailer_title": "消失的人 预告片4：“屋内有人”版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324162/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933860063.webp",
+      "id": "36452545",
+      "cover_y": 2875,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2934323852.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2934323852.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2934323852/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2934323852/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2934323852.jpg' -o '2934323852.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36452545/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/325275/",
+      "trailer_title": "功夫女足 预告片5：“周星驰，回来了！”版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325275/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -117,6 +120,35 @@
       "trailer_video_url": null,
       "trailer_video_composed": null,
       "trailer_download_command": null
+    },
+    {
+      "directors": [
+        "程伟豪"
+      ],
+      "rate": "7.2",
+      "cover_x": 4370,
+      "star": "35",
+      "title": "消失的人",
+      "url": "https://movie.douban.com/subject/36965301/",
+      "casts": [
+        "郑恺",
+        "刘浩存",
+        "邱泽",
+        "李晨",
+        "姜妍"
+      ],
+      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2931601069.webp",
+      "id": "36965301",
+      "cover_y": 6201,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932007983/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932007983/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg' -o '2932007983.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36965301/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/324162/",
+      "trailer_title": "消失的人 预告片4：“屋内有人”版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324162/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -324,35 +356,6 @@
     },
     {
       "directors": [
-        "刘海波"
-      ],
-      "rate": "8.2",
-      "cover_x": 1080,
-      "star": "40",
-      "title": "低智商犯罪",
-      "url": "https://movie.douban.com/subject/35517044/",
-      "casts": [
-        "王骁",
-        "田曦薇",
-        "王传君",
-        "朱云峰",
-        "张瑞涵"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2932040107.webp",
-      "id": "35517044",
-      "cover_y": 1920,
-      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2932190678.jpg",
-      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2932190678.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932190678/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932190678/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2932190678.jpg' -o '2932190678.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/35517044/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/324454/",
-      "trailer_title": "低智商犯罪 预告片：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324454/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "高翊浚",
         "孙梦飞"
       ],
@@ -380,6 +383,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/321325/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "刘海波"
+      ],
+      "rate": "8.2",
+      "cover_x": 1080,
+      "star": "40",
+      "title": "低智商犯罪",
+      "url": "https://movie.douban.com/subject/35517044/",
+      "casts": [
+        "王骁",
+        "田曦薇",
+        "王传君",
+        "朱云峰",
+        "张瑞涵"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2932040107.webp",
+      "id": "35517044",
+      "cover_y": 1920,
+      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2932190678.jpg",
+      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2932190678.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932190678/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932190678/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2932190678.jpg' -o '2932190678.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/35517044/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/324454/",
+      "trailer_title": "低智商犯罪 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324454/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -555,35 +587,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35295564_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35295564_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324583/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35295564_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "赵八斗"
-      ],
-      "rate": "6.0",
-      "cover_x": 3543,
-      "star": "30",
-      "title": "今晚正好",
-      "url": "https://movie.douban.com/subject/37317133/",
-      "casts": [
-        "马思纯",
-        "陈昊森",
-        "张艺凡",
-        "宋洋",
-        "温茉言"
-      ],
-      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2931924321.webp",
-      "id": "37317133",
-      "cover_y": 5314,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2931038532.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2931038532.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2931038532/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2931038532/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2931038532.jpg' -o '2931038532.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37317133/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/324667/",
-      "trailer_title": "今晚正好 其它预告片2：今晚约会指南 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317133_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317133_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324667/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317133_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
