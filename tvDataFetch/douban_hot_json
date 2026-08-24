@@ -5,9 +5,9 @@
         "邓科",
         "高琮凯"
       ],
-      "rate": "",
+      "rate": "7.1",
       "cover_x": 5906,
-      "star": "0",
+      "star": "35",
       "title": "花开锦绣",
       "url": "https://movie.douban.com/subject/36810153/",
       "casts": [
@@ -65,9 +65,9 @@
         "柏杉",
         "司元甲"
       ],
-      "rate": "",
+      "rate": "6.7",
       "cover_x": 1080,
-      "star": "0",
+      "star": "35",
       "title": "九门",
       "url": "https://movie.douban.com/subject/26811535/",
       "casts": [
@@ -89,6 +89,65 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/26811535_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/26811535_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322009/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/26811535_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "沈严",
+        "李江明"
+      ],
+      "rate": "7.4",
+      "cover_x": 5906,
+      "star": "35",
+      "title": "重器",
+      "url": "https://movie.douban.com/subject/36554071/",
+      "casts": [
+        "黄景瑜",
+        "蒋奇明",
+        "于和伟",
+        "闫佩伦",
+        "张佳宁"
+      ],
+      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934978988.webp",
+      "id": "36554071",
+      "cover_y": 10512,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2926604284/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2926604284/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg' -o '2926604284.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36554071/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/325676/",
+      "trailer_title": "重器 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325676/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "程伟豪"
+      ],
+      "rate": "7.0",
+      "cover_x": 4370,
+      "star": "35",
+      "title": "消失的人",
+      "url": "https://movie.douban.com/subject/36965301/",
+      "casts": [
+        "郑恺",
+        "刘浩存",
+        "邱泽",
+        "李晨",
+        "姜妍"
+      ],
+      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2931601069.webp",
+      "id": "36965301",
+      "cover_y": 6201,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932007983/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932007983/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg' -o '2932007983.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36965301/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/324162/",
+      "trailer_title": "消失的人 预告片4：“屋内有人”版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324162/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -118,35 +177,6 @@
       "trailer_video_url": null,
       "trailer_video_composed": null,
       "trailer_download_command": null
-    },
-    {
-      "directors": [
-        "程伟豪"
-      ],
-      "rate": "7.2",
-      "cover_x": 4370,
-      "star": "35",
-      "title": "消失的人",
-      "url": "https://movie.douban.com/subject/36965301/",
-      "casts": [
-        "郑恺",
-        "刘浩存",
-        "邱泽",
-        "李晨",
-        "姜妍"
-      ],
-      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2931601069.webp",
-      "id": "36965301",
-      "cover_y": 6201,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932007983/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932007983/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932007983.jpg' -o '2932007983.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36965301/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/324162/",
-      "trailer_title": "消失的人 预告片4：“屋内有人”版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324162/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36965301_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -210,9 +240,9 @@
       "directors": [
         "袁和平"
       ],
-      "rate": "7.5",
+      "rate": "7.4",
       "cover_x": 4285,
-      "star": "40",
+      "star": "35",
       "title": "镖人：风起大漠",
       "url": "https://movie.douban.com/subject/36474027/",
       "casts": [
@@ -237,68 +267,39 @@
     },
     {
       "directors": [
-        "沈严",
-        "李江明"
+        "高翊浚",
+        "孙梦飞"
       ],
-      "rate": "",
-      "cover_x": 5906,
-      "star": "0",
-      "title": "重器",
-      "url": "https://movie.douban.com/subject/36554071/",
+      "rate": "6.9",
+      "cover_x": 3240,
+      "star": "35",
+      "title": "雀骨",
+      "url": "https://movie.douban.com/subject/37317368/",
       "casts": [
-        "黄景瑜",
-        "蒋奇明",
-        "于和伟",
-        "闫佩伦",
-        "张佳宁"
+        "艾米",
+        "侯明昊",
+        "王以纶",
+        "马秋元",
+        "米热"
       ],
-      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934978988.webp",
-      "id": "36554071",
-      "cover_y": 10512,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2926604284/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2926604284/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg' -o '2926604284.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36554071/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/325676/",
-      "trailer_title": "重器 预告片：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325676/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "易军"
-      ],
-      "rate": "5.0",
-      "cover_x": 1552,
-      "star": "25",
-      "title": "这一秒过火",
-      "url": "https://movie.douban.com/subject/37096230/",
-      "casts": [
-        "张凌赫",
-        "王楚然",
-        "付辛博",
-        "徐振轩",
-        "鹤秋"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2929907615.webp",
-      "id": "37096230",
-      "cover_y": 2760,
-      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2934742800.jpg",
-      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2934742800.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2934742800/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2934742800/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2934742800.jpg' -o '2934742800.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37096230/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/322951/",
-      "trailer_title": "这一秒过火 预告片2 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37096230_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37096230_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322951/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37096230_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931739796.webp",
+      "id": "37317368",
+      "cover_y": 5760,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2933977613.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2933977613.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2933977613/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2933977613/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2933977613.jpg' -o '2933977613.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37317368/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/321325/",
+      "trailer_title": "雀骨 其它预告片",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/321325/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
         "梁乐民"
       ],
-      "rate": "7.0",
+      "rate": "6.9",
       "cover_x": 1250,
       "star": "35",
       "title": "寒战1994",
@@ -354,6 +355,35 @@
     },
     {
       "directors": [
+        "易军"
+      ],
+      "rate": "5.0",
+      "cover_x": 1552,
+      "star": "25",
+      "title": "这一秒过火",
+      "url": "https://movie.douban.com/subject/37096230/",
+      "casts": [
+        "张凌赫",
+        "王楚然",
+        "付辛博",
+        "徐振轩",
+        "鹤秋"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2929907615.webp",
+      "id": "37096230",
+      "cover_y": 2760,
+      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2934742800.jpg",
+      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2934742800.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2934742800/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2934742800/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2934742800.jpg' -o '2934742800.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37096230/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/322951/",
+      "trailer_title": "这一秒过火 预告片2 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37096230_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37096230_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322951/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37096230_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "刘海波"
       ],
       "rate": "8.2",
@@ -383,39 +413,9 @@
     },
     {
       "directors": [
-        "高翊浚",
-        "孙梦飞"
-      ],
-      "rate": "6.7",
-      "cover_x": 3240,
-      "star": "35",
-      "title": "雀骨",
-      "url": "https://movie.douban.com/subject/37317368/",
-      "casts": [
-        "艾米",
-        "侯明昊",
-        "王以纶",
-        "马秋元",
-        "米热"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931739796.webp",
-      "id": "37317368",
-      "cover_y": 5760,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2933977613.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2933977613.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2933977613/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2933977613/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2933977613.jpg' -o '2933977613.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37317368/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/321325/",
-      "trailer_title": "雀骨 其它预告片",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/321325/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37317368_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "杨荔钠"
       ],
-      "rate": "8.1",
+      "rate": "8.0",
       "cover_x": 5908,
       "star": "40",
       "title": "我，许可",
@@ -439,35 +439,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37332784_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37332784_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323936/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37332784_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "杨磊"
-      ],
-      "rate": "",
-      "cover_x": 4000,
-      "star": "0",
-      "title": "人鱼",
-      "url": "https://movie.douban.com/subject/36721173/",
-      "casts": [
-        "刘孜",
-        "张开泰",
-        "黄杨钿甜",
-        "董勇",
-        "张帆"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934595836.webp",
-      "id": "36721173",
-      "cover_y": 7111,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2934890327.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2934890327.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2934890327/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2934890327/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2934890327.jpg' -o '2934890327.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36721173/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/316521/",
-      "trailer_title": "人鱼 预告片 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36721173_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36721173_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/316521/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36721173_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -497,6 +468,64 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36406417_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36406417_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322018/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36406417_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "杨磊"
+      ],
+      "rate": "5.8",
+      "cover_x": 4000,
+      "star": "30",
+      "title": "人鱼",
+      "url": "https://movie.douban.com/subject/36721173/",
+      "casts": [
+        "刘孜",
+        "张开泰",
+        "黄杨钿甜",
+        "董勇",
+        "张帆"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934595836.webp",
+      "id": "36721173",
+      "cover_y": 7111,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2934890327.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2934890327.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2934890327/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2934890327/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2934890327.jpg' -o '2934890327.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36721173/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/316521/",
+      "trailer_title": "人鱼 预告片 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36721173_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36721173_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/316521/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36721173_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "廉欣"
+      ],
+      "rate": "",
+      "cover_x": 2160,
+      "star": "0",
+      "title": "邻人可疑",
+      "url": "https://movie.douban.com/subject/38245102/",
+      "casts": [
+        "张本煜",
+        "刘思维",
+        "孙艺燃",
+        "孙梦纯",
+        "宋木子"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2935098755.webp",
+      "id": "38245102",
+      "cover_y": 3240,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935123085/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935123085/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg' -o '2935123085.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/38245102/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/325828/",
+      "trailer_title": "邻人可疑 预告片2：终极版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325828/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -556,35 +585,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36889962_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36889962_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/321114/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36889962_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "洪亮"
-      ],
-      "rate": "",
-      "cover_x": 2160,
-      "star": "0",
-      "title": "欢迎再次登录",
-      "url": "https://movie.douban.com/subject/36251766/",
-      "casts": [
-        "贾静雯",
-        "白客",
-        "曹丹妮",
-        "孙美林",
-        "王乐夫"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2934887786.webp",
-      "id": "36251766",
-      "cover_y": 3840,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2934921393.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2934921393.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2934921393/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2934921393/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2934921393.jpg' -o '2934921393.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36251766/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/301115/",
-      "trailer_title": "欢迎再次登录 预告片 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36251766_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36251766_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/301115/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36251766_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
