@@ -62,6 +62,36 @@
     },
     {
       "directors": [
+        "沈严",
+        "李江明"
+      ],
+      "rate": "7.3",
+      "cover_x": 5906,
+      "star": "35",
+      "title": "重器",
+      "url": "https://movie.douban.com/subject/36554071/",
+      "casts": [
+        "黄景瑜",
+        "蒋奇明",
+        "于和伟",
+        "闫佩伦",
+        "张佳宁"
+      ],
+      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934828709.webp",
+      "id": "36554071",
+      "cover_y": 10512,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2926604284/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2926604284/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg' -o '2926604284.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36554071/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/325676/",
+      "trailer_title": "重器 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325676/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "柏杉",
         "司元甲"
       ],
@@ -89,36 +119,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/26811535_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/26811535_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322009/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/26811535_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "沈严",
-        "李江明"
-      ],
-      "rate": "7.4",
-      "cover_x": 5906,
-      "star": "35",
-      "title": "重器",
-      "url": "https://movie.douban.com/subject/36554071/",
-      "casts": [
-        "黄景瑜",
-        "蒋奇明",
-        "于和伟",
-        "闫佩伦",
-        "张佳宁"
-      ],
-      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2934828709.webp",
-      "id": "36554071",
-      "cover_y": 10512,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2926604284/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2926604284/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2926604284.jpg' -o '2926604284.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36554071/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/325676/",
-      "trailer_title": "重器 预告片：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325676/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36554071_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -209,35 +209,6 @@
     },
     {
       "directors": [
-        "袁和平"
-      ],
-      "rate": "7.4",
-      "cover_x": 4285,
-      "star": "35",
-      "title": "镖人：风起大漠",
-      "url": "https://movie.douban.com/subject/36474027/",
-      "casts": [
-        "吴京",
-        "谢霆锋",
-        "于适",
-        "陈丽君",
-        "孙艺洲"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2929760596.webp",
-      "id": "36474027",
-      "cover_y": 6000,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2929576994.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2929576994.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2929576994/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2929576994/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2929576994.jpg' -o '2929576994.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36474027/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/323851/",
-      "trailer_title": "镖人：风起大漠 其它预告片：天地任我行版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36474027_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36474027_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323851/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36474027_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "高翊浚",
         "孙梦飞"
       ],
@@ -268,6 +239,35 @@
     },
     {
       "directors": [
+        "袁和平"
+      ],
+      "rate": "7.4",
+      "cover_x": 4285,
+      "star": "35",
+      "title": "镖人：风起大漠",
+      "url": "https://movie.douban.com/subject/36474027/",
+      "casts": [
+        "吴京",
+        "谢霆锋",
+        "于适",
+        "陈丽君",
+        "孙艺洲"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2929760596.webp",
+      "id": "36474027",
+      "cover_y": 6000,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2929576994.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2929576994.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2929576994/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2929576994/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2929576994.jpg' -o '2929576994.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36474027/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/323851/",
+      "trailer_title": "镖人：风起大漠 其它预告片：天地任我行版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36474027_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36474027_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323851/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36474027_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "何澍培"
       ],
       "rate": "",
@@ -294,6 +294,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36406417_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36406417_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322018/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36406417_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "廉欣"
+      ],
+      "rate": "",
+      "cover_x": 2160,
+      "star": "0",
+      "title": "邻人可疑",
+      "url": "https://movie.douban.com/subject/38245102/",
+      "casts": [
+        "张本煜",
+        "刘思维",
+        "孙艺燃",
+        "孙梦纯",
+        "宋木子"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2935098755.webp",
+      "id": "38245102",
+      "cover_y": 3240,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935123085/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935123085/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg' -o '2935123085.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/38245102/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/325828/",
+      "trailer_title": "邻人可疑 预告片2：终极版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325828/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -355,6 +384,35 @@
     },
     {
       "directors": [
+        "袁玉梅"
+      ],
+      "rate": "",
+      "cover_x": 3937,
+      "star": "0",
+      "title": "蝉",
+      "url": "https://movie.douban.com/subject/37252177/",
+      "casts": [
+        "吴镇宇",
+        "郑云龙",
+        "钟楚曦",
+        "郑宇承",
+        "吴幸键"
+      ],
+      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2923279291.webp",
+      "id": "37252177",
+      "cover_y": 7000,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2935150042.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2935150042.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935150042/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935150042/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2935150042.jpg' -o '2935150042.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37252177/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/325841/",
+      "trailer_title": "蝉 预告片 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37252177_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37252177_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325841/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37252177_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "田羽生"
       ],
       "rate": "5.3",
@@ -381,35 +439,6 @@
       "trailer_video_url": null,
       "trailer_video_composed": null,
       "trailer_download_command": null
-    },
-    {
-      "directors": [
-        "廉欣"
-      ],
-      "rate": "",
-      "cover_x": 2160,
-      "star": "0",
-      "title": "邻人可疑",
-      "url": "https://movie.douban.com/subject/38245102/",
-      "casts": [
-        "张本煜",
-        "刘思维",
-        "孙艺燃",
-        "孙梦纯",
-        "宋木子"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2935098755.webp",
-      "id": "38245102",
-      "cover_y": 3240,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935123085/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935123085/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2935123085.jpg' -o '2935123085.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/38245102/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/325828/",
-      "trailer_title": "邻人可疑 预告片2：终极版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325828/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/38245102_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -500,32 +529,32 @@
     },
     {
       "directors": [
-        "袁玉梅"
+        "朴松日"
       ],
-      "rate": "",
-      "cover_x": 3937,
-      "star": "0",
-      "title": "蝉",
-      "url": "https://movie.douban.com/subject/37252177/",
+      "rate": "5.3",
+      "cover_x": 2126,
+      "star": "25",
+      "title": "爱是愤怒",
+      "url": "https://movie.douban.com/subject/37152802/",
       "casts": [
-        "吴镇宇",
-        "郑云龙",
-        "钟楚曦",
-        "郑宇承",
-        "吴幸键"
+        "王安宇",
+        "王玉雯",
+        "王砚辉",
+        "易小星",
+        "王储"
       ],
-      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2923279291.webp",
-      "id": "37252177",
-      "cover_y": 7000,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2935150042.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2935150042.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935150042/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935150042/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2935150042.jpg' -o '2935150042.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37252177/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/325841/",
-      "trailer_title": "蝉 预告片 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37252177_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37252177_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325841/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37252177_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931574204.webp",
+      "id": "37152802",
+      "cover_y": 2976,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2933553564.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2933553564.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2933553564/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2933553564/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2933553564.jpg' -o '2933553564.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37152802/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/325044/",
+      "trailer_title": "爱是愤怒 其它预告片：“爱是什么”特别视频 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37152802_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37152802_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325044/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37152802_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -556,35 +585,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35653123_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35653123_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/321116/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35653123_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "朴松日"
-      ],
-      "rate": "5.3",
-      "cover_x": 2126,
-      "star": "25",
-      "title": "爱是愤怒",
-      "url": "https://movie.douban.com/subject/37152802/",
-      "casts": [
-        "王安宇",
-        "王玉雯",
-        "王砚辉",
-        "易小星",
-        "王储"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931574204.webp",
-      "id": "37152802",
-      "cover_y": 2976,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2933553564.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2933553564.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2933553564/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2933553564/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2933553564.jpg' -o '2933553564.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37152802/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/325044/",
-      "trailer_title": "爱是愤怒 其它预告片：“爱是什么”特别视频 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37152802_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37152802_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325044/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37152802_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
