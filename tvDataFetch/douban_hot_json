@@ -118,36 +118,6 @@
     },
     {
       "directors": [
-        "菲尔·罗德",
-        "克里斯托弗·米勒"
-      ],
-      "rate": "8.6",
-      "cover_x": 3000,
-      "star": "45",
-      "title": "挽救计划",
-      "url": "https://movie.douban.com/subject/35010610/",
-      "casts": [
-        "瑞恩·高斯林",
-        "桑德拉·惠勒",
-        "詹姆斯·奥尔蒂斯",
-        "莱昂内尔·博伊斯",
-        "梁振邦"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2931370692.webp",
-      "id": "35010610",
-      "cover_y": 4447,
-      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg",
-      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2930560800/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2930560800/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg' -o '2930560800.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/35010610/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/324081/",
-      "trailer_title": "挽救计划 其它预告片",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324081/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "黄颖湘",
         "陈丹"
       ],
@@ -175,6 +145,36 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36449295_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36449295_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/320936/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36449295_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "菲尔·罗德",
+        "克里斯托弗·米勒"
+      ],
+      "rate": "8.6",
+      "cover_x": 3000,
+      "star": "45",
+      "title": "挽救计划",
+      "url": "https://movie.douban.com/subject/35010610/",
+      "casts": [
+        "瑞恩·高斯林",
+        "桑德拉·惠勒",
+        "詹姆斯·奥尔蒂斯",
+        "莱昂内尔·博伊斯",
+        "梁振邦"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2931370692.webp",
+      "id": "35010610",
+      "cover_y": 4447,
+      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg",
+      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2930560800/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2930560800/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg' -o '2930560800.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/35010610/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/324081/",
+      "trailer_title": "挽救计划 其它预告片",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324081/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -532,35 +532,6 @@
     },
     {
       "directors": [
-        "李昂"
-      ],
-      "rate": "4.4",
-      "cover_x": 2500,
-      "star": "20",
-      "title": "重案六组：消失的警号",
-      "url": "https://movie.douban.com/subject/38407616/",
-      "casts": [
-        "张一山",
-        "李沐宸",
-        "郭晓东",
-        "葛铮",
-        "赵明川"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935392983.webp",
-      "id": "38407616",
-      "cover_y": 4445,
-      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2935601420.jpg",
-      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2935601420.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935601420/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935601420/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2935601420.jpg' -o '2935601420.jpg'",
-      "trailer_page_url": null,
-      "trailer_detail_url": null,
-      "trailer_title": null,
-      "trailer_video_url": null,
-      "trailer_video_composed": null,
-      "trailer_download_command": null
-    },
-    {
-      "directors": [
         "刘海波"
       ],
       "rate": "8.2",
@@ -587,6 +558,36 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324454/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35517044_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "翁子光",
+        "徐忱"
+      ],
+      "rate": "",
+      "cover_x": 2160,
+      "star": "0",
+      "title": "冬城猎凶",
+      "url": "https://movie.douban.com/subject/37264799/",
+      "casts": [
+        "王阳",
+        "万茜",
+        "余文乐",
+        "尹文萱 ",
+        "李纯"
+      ],
+      "cover": "https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2935615919.webp",
+      "id": "37264799",
+      "cover_y": 3840,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2935673347.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2935673347.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935673347/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935673347/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2935673347.jpg' -o '2935673347.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37264799/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326090/",
+      "trailer_title": "冬城猎凶 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37264799_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37264799_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326090/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37264799_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
