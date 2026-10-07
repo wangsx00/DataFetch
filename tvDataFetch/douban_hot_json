@@ -180,6 +180,35 @@
     },
     {
       "directors": [
+        "郑伟文"
+      ],
+      "rate": "",
+      "cover_x": 2000,
+      "star": "0",
+      "title": "魅影神捕",
+      "url": "https://movie.douban.com/subject/36481657/",
+      "casts": [
+        "罗云熙",
+        "方逸伦",
+        "沈羽洁",
+        "何泓姗",
+        "王海祥"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936307508.webp",
+      "id": "36481657",
+      "cover_y": 3566,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2931738048.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2931738048.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2931738048/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2931738048/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2931738048.jpg' -o '2931738048.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36481657/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326385/",
+      "trailer_title": "魅影神捕 预告片 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36481657_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36481657_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326385/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36481657_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "冯小刚"
       ],
       "rate": "7.2",
@@ -235,35 +264,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36660844_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36660844_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322939/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36660844_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "郑伟文"
-      ],
-      "rate": "",
-      "cover_x": 2000,
-      "star": "0",
-      "title": "魅影神捕",
-      "url": "https://movie.douban.com/subject/36481657/",
-      "casts": [
-        "罗云熙",
-        "方逸伦",
-        "沈羽洁",
-        "何泓姗",
-        "王海祥"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936307508.webp",
-      "id": "36481657",
-      "cover_y": 3566,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2931738048.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2931738048.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2931738048/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2931738048/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2931738048.jpg' -o '2931738048.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36481657/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326385/",
-      "trailer_title": "魅影神捕 预告片 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36481657_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36481657_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326385/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36481657_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -473,6 +473,35 @@
     },
     {
       "directors": [
+        "丽贝卡·加特沃德"
+      ],
+      "rate": "8.5",
+      "cover_x": 2000,
+      "star": "45",
+      "title": "翠鸟谋杀案",
+      "url": "https://movie.douban.com/subject/37218278/",
+      "casts": [
+        "莱丝利·曼维尔",
+        "蒂姆·迈克穆兰",
+        "杰米·布莱克利",
+        "派翠西亚·霍吉",
+        "马克·博纳尔"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935049923.webp",
+      "id": "37218278",
+      "cover_y": 3000,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936182926/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936182926/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg' -o '2936182926.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37218278/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326076/",
+      "trailer_title": "翠鸟谋杀案 电视版",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326076/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "刘海波"
       ],
       "rate": "7.3",
@@ -528,35 +557,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36808520_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36808520_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325014/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36808520_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "丽贝卡·加特沃德"
-      ],
-      "rate": "8.5",
-      "cover_x": 2000,
-      "star": "45",
-      "title": "翠鸟谋杀案",
-      "url": "https://movie.douban.com/subject/37218278/",
-      "casts": [
-        "莱丝利·曼维尔",
-        "蒂姆·迈克穆兰",
-        "杰米·布莱克利",
-        "派翠西亚·霍吉",
-        "马克·博纳尔"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935049923.webp",
-      "id": "37218278",
-      "cover_y": 3000,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936182926/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936182926/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg' -o '2936182926.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37218278/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326076/",
-      "trailer_title": "翠鸟谋杀案 电视版",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326076/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
