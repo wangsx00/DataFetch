@@ -89,35 +89,6 @@
     },
     {
       "directors": [
-        "赵文海"
-      ],
-      "rate": "8.7",
-      "cover_x": 1696,
-      "star": "45",
-      "title": "后会友期",
-      "url": "https://movie.douban.com/subject/37100984/",
-      "casts": [
-        "李维嘉",
-        "张泉灵",
-        "苏醒",
-        "周笔畅",
-        "黄子弘凡"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936933522.webp",
-      "id": "37100984",
-      "cover_y": 2560,
-      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2937061321.jpg",
-      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2937061321.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2937061321/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2937061321/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2937061321.jpg' -o '2937061321.jpg'",
-      "trailer_page_url": null,
-      "trailer_detail_url": null,
-      "trailer_title": null,
-      "trailer_video_url": null,
-      "trailer_video_composed": null,
-      "trailer_download_command": null
-    },
-    {
-      "directors": [
         "牟正洋"
       ],
       "rate": "8.2",
@@ -205,35 +176,6 @@
     },
     {
       "directors": [
-        "杨阳"
-      ],
-      "rate": "7.5",
-      "cover_x": 5102,
-      "star": "40",
-      "title": "醉梦",
-      "url": "https://movie.douban.com/subject/37042229/",
-      "casts": [
-        "刘诗诗",
-        "李乃文",
-        "胡先煦",
-        "黄小蕾",
-        "陈永胜"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936594830.webp",
-      "id": "37042229",
-      "cover_y": 9071,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936750912/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936750912/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg' -o '2936750912.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37042229/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/319702/",
-      "trailer_title": "醉梦 预告片2：概念版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/319702/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "黄颖湘",
         "陈丹"
       ],
@@ -261,6 +203,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36449295_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36449295_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/320936/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36449295_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "杨阳"
+      ],
+      "rate": "7.5",
+      "cover_x": 5102,
+      "star": "40",
+      "title": "醉梦",
+      "url": "https://movie.douban.com/subject/37042229/",
+      "casts": [
+        "刘诗诗",
+        "李乃文",
+        "胡先煦",
+        "黄小蕾",
+        "陈永胜"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936594830.webp",
+      "id": "37042229",
+      "cover_y": 9071,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936750912/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936750912/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg' -o '2936750912.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37042229/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/319702/",
+      "trailer_title": "醉梦 预告片2：概念版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/319702/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -472,32 +443,33 @@
     },
     {
       "directors": [
-        "丽贝卡·加特沃德"
+        "菲尔·罗德",
+        "克里斯托弗·米勒"
       ],
-      "rate": "8.3",
-      "cover_x": 2000,
-      "star": "40",
-      "title": "翠鸟谋杀案",
-      "url": "https://movie.douban.com/subject/37218278/",
+      "rate": "8.6",
+      "cover_x": 3000,
+      "star": "45",
+      "title": "挽救计划",
+      "url": "https://movie.douban.com/subject/35010610/",
       "casts": [
-        "莱丝利·曼维尔",
-        "蒂姆·迈克穆兰",
-        "杰米·布莱克利",
-        "派翠西亚·霍吉",
-        "马克·博纳尔"
+        "瑞恩·高斯林",
+        "桑德拉·惠勒",
+        "詹姆斯·奥尔蒂斯",
+        "莱昂内尔·博伊斯",
+        "梁振邦"
       ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935049923.webp",
-      "id": "37218278",
-      "cover_y": 3000,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936182926/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936182926/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg' -o '2936182926.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37218278/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326076/",
-      "trailer_title": "翠鸟谋杀案 电视版",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326076/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2931370692.webp",
+      "id": "35010610",
+      "cover_y": 4447,
+      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg",
+      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2930560800/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2930560800/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg' -o '2930560800.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/35010610/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/324081/",
+      "trailer_title": "挽救计划 其它预告片",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324081/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -530,6 +502,64 @@
     },
     {
       "directors": [
+        "丽贝卡·加特沃德"
+      ],
+      "rate": "8.3",
+      "cover_x": 2000,
+      "star": "40",
+      "title": "翠鸟谋杀案",
+      "url": "https://movie.douban.com/subject/37218278/",
+      "casts": [
+        "莱丝利·曼维尔",
+        "蒂姆·迈克穆兰",
+        "杰米·布莱克利",
+        "派翠西亚·霍吉",
+        "马克·博纳尔"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935049923.webp",
+      "id": "37218278",
+      "cover_y": 3000,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936182926/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936182926/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg' -o '2936182926.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37218278/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326076/",
+      "trailer_title": "翠鸟谋杀案 电视版",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326076/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "猫的树"
+      ],
+      "rate": "",
+      "cover_x": 1080,
+      "star": "0",
+      "title": "今天是太阳雨",
+      "url": "https://movie.douban.com/subject/36689621/",
+      "casts": [
+        "杨超越",
+        "董思成",
+        "丁嘉丽",
+        "田小洁",
+        "孙宁"
+      ],
+      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2926620581.webp",
+      "id": "36689621",
+      "cover_y": 1920,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2937313286.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2937313286.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2937313286/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2937313286/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2937313286.jpg' -o '2937313286.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36689621/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326754/",
+      "trailer_title": "今天是太阳雨 预告片 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36689621_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36689621_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326754/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36689621_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "王迎",
         "毋辉辉"
       ],
@@ -557,36 +587,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36962068_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36962068_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326386/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36962068_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "菲尔·罗德",
-        "克里斯托弗·米勒"
-      ],
-      "rate": "8.6",
-      "cover_x": 3000,
-      "star": "45",
-      "title": "挽救计划",
-      "url": "https://movie.douban.com/subject/35010610/",
-      "casts": [
-        "瑞恩·高斯林",
-        "桑德拉·惠勒",
-        "詹姆斯·奥尔蒂斯",
-        "莱昂内尔·博伊斯",
-        "梁振邦"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2931370692.webp",
-      "id": "35010610",
-      "cover_y": 4447,
-      "horizontal_cover": "https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg",
-      "horizontal_cover_composed": "https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2930560800/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2930560800/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img1.doubanio.com/view/photo/l/public/p2930560800.jpg' -o '2930560800.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/35010610/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/324081/",
-      "trailer_title": "挽救计划 其它预告片",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324081/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
