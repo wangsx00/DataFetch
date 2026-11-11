@@ -118,35 +118,6 @@
     },
     {
       "directors": [
-        "姚婷婷"
-      ],
-      "rate": "7.8",
-      "cover_x": 4500,
-      "star": "40",
-      "title": "蒸蒸日上",
-      "url": "https://movie.douban.com/subject/37296949/",
-      "casts": [
-        "王皓",
-        "高叶",
-        "韩东君",
-        "王丽娜",
-        "孙若宁"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936476679.webp",
-      "id": "37296949",
-      "cover_y": 8000,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936706206/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936706206/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg' -o '2936706206.jpg'",
-      "trailer_page_url": null,
-      "trailer_detail_url": null,
-      "trailer_title": null,
-      "trailer_video_url": null,
-      "trailer_video_composed": null,
-      "trailer_download_command": null
-    },
-    {
-      "directors": [
         "蓝鸿春"
       ],
       "rate": "9.3",
@@ -173,6 +144,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324316/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "姚婷婷"
+      ],
+      "rate": "7.8",
+      "cover_x": 4500,
+      "star": "40",
+      "title": "蒸蒸日上",
+      "url": "https://movie.douban.com/subject/37296949/",
+      "casts": [
+        "王皓",
+        "高叶",
+        "韩东君",
+        "王丽娜",
+        "孙若宁"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936476679.webp",
+      "id": "37296949",
+      "cover_y": 8000,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936706206/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936706206/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg' -o '2936706206.jpg'",
+      "trailer_page_url": null,
+      "trailer_detail_url": null,
+      "trailer_title": null,
+      "trailer_video_url": null,
+      "trailer_video_composed": null,
+      "trailer_download_command": null
     },
     {
       "directors": [
@@ -206,35 +206,6 @@
     },
     {
       "directors": [
-        "于淼"
-      ],
-      "rate": "7.8",
-      "cover_x": 5906,
-      "star": "40",
-      "title": "余红旧事",
-      "url": "https://movie.douban.com/subject/37560173/",
-      "casts": [
-        "马伊琍",
-        "王佳佳",
-        "张哲华",
-        "向涵之",
-        "付航"
-      ],
-      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2936223841.webp",
-      "id": "37560173",
-      "cover_y": 10498,
-      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg",
-      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936354861/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936354861/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg' -o '2936354861.jpg'",
-      "trailer_page_url": null,
-      "trailer_detail_url": null,
-      "trailer_title": null,
-      "trailer_video_url": null,
-      "trailer_video_composed": null,
-      "trailer_download_command": null
-    },
-    {
-      "directors": [
         "秦榛"
       ],
       "rate": "",
@@ -264,32 +235,32 @@
     },
     {
       "directors": [
-        "杨阳"
+        "于淼"
       ],
-      "rate": "7.5",
-      "cover_x": 5102,
+      "rate": "7.8",
+      "cover_x": 5906,
       "star": "40",
-      "title": "醉梦",
-      "url": "https://movie.douban.com/subject/37042229/",
+      "title": "余红旧事",
+      "url": "https://movie.douban.com/subject/37560173/",
       "casts": [
-        "刘诗诗",
-        "李乃文",
-        "胡先煦",
-        "黄小蕾",
-        "陈永胜"
+        "马伊琍",
+        "王佳佳",
+        "张哲华",
+        "向涵之",
+        "付航"
       ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936594830.webp",
-      "id": "37042229",
-      "cover_y": 9071,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936750912/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936750912/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg' -o '2936750912.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37042229/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/319702/",
-      "trailer_title": "醉梦 预告片2：概念版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/319702/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2936223841.webp",
+      "id": "37560173",
+      "cover_y": 10498,
+      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg",
+      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936354861/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936354861/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg' -o '2936354861.jpg'",
+      "trailer_page_url": null,
+      "trailer_detail_url": null,
+      "trailer_title": null,
+      "trailer_video_url": null,
+      "trailer_video_composed": null,
+      "trailer_download_command": null
     },
     {
       "directors": [
@@ -323,6 +294,35 @@
     },
     {
       "directors": [
+        "杨阳"
+      ],
+      "rate": "7.5",
+      "cover_x": 5102,
+      "star": "40",
+      "title": "醉梦",
+      "url": "https://movie.douban.com/subject/37042229/",
+      "casts": [
+        "刘诗诗",
+        "李乃文",
+        "胡先煦",
+        "黄小蕾",
+        "陈永胜"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936594830.webp",
+      "id": "37042229",
+      "cover_y": 9071,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936750912/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936750912/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936750912.jpg' -o '2936750912.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37042229/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/319702/",
+      "trailer_title": "醉梦 预告片2：概念版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/319702/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37042229_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "刘文普",
         "许少飞"
       ],
@@ -350,35 +350,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326252/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "曹盾"
-      ],
-      "rate": "6.0",
-      "cover_x": 5512,
-      "star": "30",
-      "title": "敦煌英雄",
-      "url": "https://movie.douban.com/subject/35244246/",
-      "casts": [
-        "章宇",
-        "窦骁",
-        "吕凉",
-        "蔡鹭",
-        "赵蕴卓"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936069048.webp",
-      "id": "35244246",
-      "cover_y": 7875,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936136248/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936136248/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg' -o '2936136248.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/35244246/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/308982/",
-      "trailer_title": "敦煌英雄 预告片2 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/308982/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -411,6 +382,64 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325275/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "曹盾"
+      ],
+      "rate": "6.0",
+      "cover_x": 5512,
+      "star": "30",
+      "title": "敦煌英雄",
+      "url": "https://movie.douban.com/subject/35244246/",
+      "casts": [
+        "章宇",
+        "窦骁",
+        "吕凉",
+        "蔡鹭",
+        "赵蕴卓"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936069048.webp",
+      "id": "35244246",
+      "cover_y": 7875,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936136248/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936136248/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg' -o '2936136248.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/35244246/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/308982/",
+      "trailer_title": "敦煌英雄 预告片2 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/308982/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "李路"
+      ],
+      "rate": "",
+      "cover_x": 1280,
+      "star": "0",
+      "title": "谷雨",
+      "url": "https://movie.douban.com/subject/37109676/",
+      "casts": [
+        "井柏然",
+        "孙艺洲",
+        "张颂文",
+        "王鸥",
+        "王奕婷"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936897680.webp",
+      "id": "37109676",
+      "cover_y": 2276,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2937199364/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2937199364/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg' -o '2937199364.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37109676/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/322016/",
+      "trailer_title": "谷雨 花絮：制作特辑 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322016/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -502,64 +531,6 @@
     },
     {
       "directors": [
-        "杨磊"
-      ],
-      "rate": "7.3",
-      "cover_x": 3983,
-      "star": "35",
-      "title": "我不是大师",
-      "url": "https://movie.douban.com/subject/37297001/",
-      "casts": [
-        "李现",
-        "李一桐",
-        "吴刚",
-        "刘冠麟",
-        "果靖霖"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935858538.webp",
-      "id": "37297001",
-      "cover_y": 7087,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936100509.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936100509.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936100509/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936100509/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936100509.jpg' -o '2936100509.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37297001/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326266/",
-      "trailer_title": "我不是大师 预告片：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37297001_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37297001_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326266/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37297001_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "李路"
-      ],
-      "rate": "",
-      "cover_x": 1280,
-      "star": "0",
-      "title": "谷雨",
-      "url": "https://movie.douban.com/subject/37109676/",
-      "casts": [
-        "井柏然",
-        "孙艺洲",
-        "张颂文",
-        "王鸥",
-        "王奕婷"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936897680.webp",
-      "id": "37109676",
-      "cover_y": 2276,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2937199364/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2937199364/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg' -o '2937199364.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37109676/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/322016/",
-      "trailer_title": "谷雨 花絮：制作特辑 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322016/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "张博昱"
       ],
       "rate": "",
@@ -586,6 +557,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326727/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "杨磊"
+      ],
+      "rate": "7.3",
+      "cover_x": 3983,
+      "star": "35",
+      "title": "我不是大师",
+      "url": "https://movie.douban.com/subject/37297001/",
+      "casts": [
+        "李现",
+        "李一桐",
+        "吴刚",
+        "刘冠麟",
+        "果靖霖"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935858538.webp",
+      "id": "37297001",
+      "cover_y": 7087,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936100509.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936100509.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936100509/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936100509/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936100509.jpg' -o '2936100509.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37297001/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326266/",
+      "trailer_title": "我不是大师 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37297001_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37297001_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326266/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37297001_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
