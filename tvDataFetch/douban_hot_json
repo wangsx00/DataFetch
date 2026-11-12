@@ -2,35 +2,6 @@
   "data": [
     {
       "directors": [
-        "张晓波"
-      ],
-      "rate": "8.0",
-      "cover_x": 4533,
-      "star": "40",
-      "title": "小城良方",
-      "url": "https://movie.douban.com/subject/36675942/",
-      "casts": [
-        "肖战",
-        "倪大红",
-        "姜妍",
-        "史彭元",
-        "菅纫姿"
-      ],
-      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2936709341.webp",
-      "id": "36675942",
-      "cover_y": 8058,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936881346/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936881346/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg' -o '2936881346.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36675942/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326317/",
-      "trailer_title": "小城良方 预告片2 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326317/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "牟正洋"
       ],
       "rate": "8.2",
@@ -57,6 +28,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36882191_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36882191_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325264/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36882191_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "张晓波"
+      ],
+      "rate": "8.0",
+      "cover_x": 4533,
+      "star": "40",
+      "title": "小城良方",
+      "url": "https://movie.douban.com/subject/36675942/",
+      "casts": [
+        "肖战",
+        "倪大红",
+        "姜妍",
+        "史彭元",
+        "菅纫姿"
+      ],
+      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2936709341.webp",
+      "id": "36675942",
+      "cover_y": 8058,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936881346/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936881346/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg' -o '2936881346.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36675942/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326317/",
+      "trailer_title": "小城良方 预告片2 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326317/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -323,33 +323,32 @@
     },
     {
       "directors": [
-        "刘文普",
-        "许少飞"
+        "李路"
       ],
-      "rate": "7.5",
-      "cover_x": 1080,
-      "star": "40",
-      "title": "杯雪·一战成名",
-      "url": "https://movie.douban.com/subject/37516455/",
+      "rate": "",
+      "cover_x": 1280,
+      "star": "0",
+      "title": "谷雨",
+      "url": "https://movie.douban.com/subject/37109676/",
       "casts": [
-        "潘斌龙",
-        "安志杰",
-        "奚望",
-        "淳于珊珊",
-        "姜政宇"
+        "井柏然",
+        "孙艺洲",
+        "张颂文",
+        "王鸥",
+        "王奕婷"
       ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2936719035.webp",
-      "id": "37516455",
-      "cover_y": 1920,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2935862888.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2935862888.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935862888/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935862888/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2935862888.jpg' -o '2935862888.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37516455/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326252/",
-      "trailer_title": "杯雪·一战成名 预告片 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326252/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936897680.webp",
+      "id": "37109676",
+      "cover_y": 2276,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2937199364/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2937199364/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg' -o '2937199364.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37109676/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/322016/",
+      "trailer_title": "谷雨 花絮：制作特辑 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322016/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -385,61 +384,62 @@
     },
     {
       "directors": [
-        "曹盾"
+        "刘文普",
+        "许少飞"
       ],
-      "rate": "6.0",
-      "cover_x": 5512,
-      "star": "30",
-      "title": "敦煌英雄",
-      "url": "https://movie.douban.com/subject/35244246/",
+      "rate": "7.5",
+      "cover_x": 1080,
+      "star": "40",
+      "title": "杯雪·一战成名",
+      "url": "https://movie.douban.com/subject/37516455/",
       "casts": [
-        "章宇",
-        "窦骁",
-        "吕凉",
-        "蔡鹭",
-        "赵蕴卓"
+        "潘斌龙",
+        "安志杰",
+        "奚望",
+        "淳于珊珊",
+        "姜政宇"
       ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936069048.webp",
-      "id": "35244246",
-      "cover_y": 7875,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936136248/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936136248/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg' -o '2936136248.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/35244246/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/308982/",
-      "trailer_title": "敦煌英雄 预告片2 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/308982/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2936719035.webp",
+      "id": "37516455",
+      "cover_y": 1920,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2935862888.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2935862888.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935862888/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935862888/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2935862888.jpg' -o '2935862888.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37516455/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326252/",
+      "trailer_title": "杯雪·一战成名 预告片 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326252/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37516455_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
-        "李路"
+        "张博昱"
       ],
       "rate": "",
-      "cover_x": 1280,
+      "cover_x": 2339,
       "star": "0",
-      "title": "谷雨",
-      "url": "https://movie.douban.com/subject/37109676/",
+      "title": "折月亮",
+      "url": "https://movie.douban.com/subject/36809913/",
       "casts": [
-        "井柏然",
-        "孙艺洲",
-        "张颂文",
-        "王鸥",
-        "王奕婷"
+        "林一",
+        "卢昱晓",
+        "卢洋洋",
+        "李歌洋",
+        "黄圣池"
       ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936897680.webp",
-      "id": "37109676",
-      "cover_y": 2276,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2937199364/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2937199364/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2937199364.jpg' -o '2937199364.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37109676/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/322016/",
-      "trailer_title": "谷雨 花絮：制作特辑 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322016/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931738914.webp",
+      "id": "36809913",
+      "cover_y": 4158,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2924724329/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2924724329/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg' -o '2924724329.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36809913/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326727/",
+      "trailer_title": "折月亮 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326727/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -470,6 +470,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324081/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35010610_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "曹盾"
+      ],
+      "rate": "6.0",
+      "cover_x": 5512,
+      "star": "30",
+      "title": "敦煌英雄",
+      "url": "https://movie.douban.com/subject/35244246/",
+      "casts": [
+        "章宇",
+        "窦骁",
+        "吕凉",
+        "蔡鹭",
+        "赵蕴卓"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936069048.webp",
+      "id": "35244246",
+      "cover_y": 7875,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936136248/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936136248/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2936136248.jpg' -o '2936136248.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/35244246/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/308982/",
+      "trailer_title": "敦煌英雄 预告片2 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/308982/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/35244246_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -528,35 +557,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325559/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "张博昱"
-      ],
-      "rate": "",
-      "cover_x": 2339,
-      "star": "0",
-      "title": "折月亮",
-      "url": "https://movie.douban.com/subject/36809913/",
-      "casts": [
-        "林一",
-        "卢昱晓",
-        "卢洋洋",
-        "李歌洋",
-        "黄圣池"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931738914.webp",
-      "id": "36809913",
-      "cover_y": 4158,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2924724329/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2924724329/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg' -o '2924724329.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36809913/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326727/",
-      "trailer_title": "折月亮 预告片：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326727/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
