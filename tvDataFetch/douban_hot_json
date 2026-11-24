@@ -2,8 +2,7 @@
   "data": [
     {
       "directors": [
-        "张黎",
-        "安巍"
+        "张黎"
       ],
       "rate": "",
       "cover_x": 2000,
@@ -148,35 +147,6 @@
     },
     {
       "directors": [
-        "蓝鸿春"
-      ],
-      "rate": "9.3",
-      "cover_x": 3543,
-      "star": "45",
-      "title": "给阿嬷的情书",
-      "url": "https://movie.douban.com/subject/37116446/",
-      "casts": [
-        "李思潼",
-        "王彦桐",
-        "吴少卿",
-        "郑润奇",
-        "王晓慧"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2931851430.webp",
-      "id": "37116446",
-      "cover_y": 5316,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932439739.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932439739.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932439739/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932439739/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932439739.jpg' -o '2932439739.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37116446/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/324316/",
-      "trailer_title": "给阿嬷的情书 预告片3：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324316/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "李路"
       ],
       "rate": "6.3",
@@ -203,6 +173,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322016/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "蓝鸿春"
+      ],
+      "rate": "9.3",
+      "cover_x": 3543,
+      "star": "45",
+      "title": "给阿嬷的情书",
+      "url": "https://movie.douban.com/subject/37116446/",
+      "casts": [
+        "李思潼",
+        "王彦桐",
+        "吴少卿",
+        "郑润奇",
+        "王晓慧"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2931851430.webp",
+      "id": "37116446",
+      "cover_y": 5316,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2932439739.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2932439739.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2932439739/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2932439739/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2932439739.jpg' -o '2932439739.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37116446/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/324316/",
+      "trailer_title": "给阿嬷的情书 预告片3：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/324316/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37116446_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -323,35 +322,6 @@
     },
     {
       "directors": [
-        "张博昱"
-      ],
-      "rate": "4.7",
-      "cover_x": 2339,
-      "star": "25",
-      "title": "折月亮",
-      "url": "https://movie.douban.com/subject/36809913/",
-      "casts": [
-        "林一",
-        "卢昱晓",
-        "卢洋洋",
-        "李歌洋",
-        "黄圣池"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931738914.webp",
-      "id": "36809913",
-      "cover_y": 4158,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2924724329/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2924724329/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg' -o '2924724329.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36809913/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326727/",
-      "trailer_title": "折月亮 预告片：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326727/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "菲尔·罗德",
         "克里斯托弗·米勒"
       ],
@@ -412,32 +382,32 @@
     },
     {
       "directors": [
-        "于淼"
+        "张博昱"
       ],
-      "rate": "7.8",
-      "cover_x": 5906,
-      "star": "40",
-      "title": "余红旧事",
-      "url": "https://movie.douban.com/subject/37560173/",
+      "rate": "4.7",
+      "cover_x": 2339,
+      "star": "25",
+      "title": "折月亮",
+      "url": "https://movie.douban.com/subject/36809913/",
       "casts": [
-        "马伊琍",
-        "王佳佳",
-        "张哲华",
-        "向涵之",
-        "付航"
+        "林一",
+        "卢昱晓",
+        "卢洋洋",
+        "李歌洋",
+        "黄圣池"
       ],
-      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2936223841.webp",
-      "id": "37560173",
-      "cover_y": 10498,
-      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg",
-      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936354861/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936354861/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg' -o '2936354861.jpg'",
-      "trailer_page_url": null,
-      "trailer_detail_url": null,
-      "trailer_title": null,
-      "trailer_video_url": null,
-      "trailer_video_composed": null,
-      "trailer_download_command": null
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931738914.webp",
+      "id": "36809913",
+      "cover_y": 4158,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2924724329/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2924724329/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg' -o '2924724329.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36809913/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326727/",
+      "trailer_title": "折月亮 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326727/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -467,6 +437,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325559/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "于淼"
+      ],
+      "rate": "7.8",
+      "cover_x": 5906,
+      "star": "40",
+      "title": "余红旧事",
+      "url": "https://movie.douban.com/subject/37560173/",
+      "casts": [
+        "马伊琍",
+        "王佳佳",
+        "张哲华",
+        "向涵之",
+        "付航"
+      ],
+      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2936223841.webp",
+      "id": "37560173",
+      "cover_y": 10498,
+      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg",
+      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936354861/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936354861/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2936354861.jpg' -o '2936354861.jpg'",
+      "trailer_page_url": null,
+      "trailer_detail_url": null,
+      "trailer_title": null,
+      "trailer_video_url": null,
+      "trailer_video_composed": null,
+      "trailer_download_command": null
     },
     {
       "directors": [
