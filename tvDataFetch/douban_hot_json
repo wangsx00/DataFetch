@@ -60,35 +60,6 @@
     },
     {
       "directors": [
-        "韩延"
-      ],
-      "rate": "7.1",
-      "cover_x": 5905,
-      "star": "35",
-      "title": "空枪",
-      "url": "https://movie.douban.com/subject/37508847/",
-      "casts": [
-        "朱一龙",
-        "檀健次",
-        "梁家辉",
-        "卫诗雅",
-        "惠英红"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934946788.webp",
-      "id": "37508847",
-      "cover_y": 8269,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2935679574.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2935679574.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935679574/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935679574/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2935679574.jpg' -o '2935679574.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37508847/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326021/",
-      "trailer_title": "空枪 其它预告片：“巧取陈公子”版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326021/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "张晓波"
       ],
       "rate": "8.1",
@@ -118,32 +89,32 @@
     },
     {
       "directors": [
-        "杨龙"
+        "韩延"
       ],
-      "rate": "6.7",
-      "cover_x": 2250,
+      "rate": "7.1",
+      "cover_x": 5905,
       "star": "35",
-      "title": "嫁金钗",
-      "url": "https://movie.douban.com/subject/37191789/",
+      "title": "空枪",
+      "url": "https://movie.douban.com/subject/37508847/",
       "casts": [
-        "田曦薇",
-        "闫桉",
-        "刘小北",
-        "潘珺雅",
-        "代高政"
+        "朱一龙",
+        "檀健次",
+        "梁家辉",
+        "卫诗雅",
+        "惠英红"
       ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936594583.webp",
-      "id": "37191789",
-      "cover_y": 4000,
-      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2936746041.jpg",
-      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2936746041.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936746041/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936746041/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2936746041.jpg' -o '2936746041.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37191789/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326504/",
-      "trailer_title": "嫁金钗 预告片：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191789_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191789_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326504/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191789_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2934946788.webp",
+      "id": "37508847",
+      "cover_y": 8269,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2935679574.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2935679574.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2935679574/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2935679574/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2935679574.jpg' -o '2935679574.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37508847/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326021/",
+      "trailer_title": "空枪 其它预告片：“巧取陈公子”版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326021/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -173,6 +144,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/322016/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37109676_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "杨龙"
+      ],
+      "rate": "6.7",
+      "cover_x": 2250,
+      "star": "35",
+      "title": "嫁金钗",
+      "url": "https://movie.douban.com/subject/37191789/",
+      "casts": [
+        "田曦薇",
+        "闫桉",
+        "刘小北",
+        "潘珺雅",
+        "代高政"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936594583.webp",
+      "id": "37191789",
+      "cover_y": 4000,
+      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2936746041.jpg",
+      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2936746041.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936746041/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936746041/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2936746041.jpg' -o '2936746041.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37191789/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326504/",
+      "trailer_title": "嫁金钗 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191789_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191789_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326504/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191789_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -352,35 +352,6 @@
     },
     {
       "directors": [
-        "张博昱"
-      ],
-      "rate": "4.7",
-      "cover_x": 2339,
-      "star": "25",
-      "title": "折月亮",
-      "url": "https://movie.douban.com/subject/36809913/",
-      "casts": [
-        "林一",
-        "卢昱晓",
-        "卢洋洋",
-        "李歌洋",
-        "黄圣池"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931738914.webp",
-      "id": "36809913",
-      "cover_y": 4158,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2924724329/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2924724329/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg' -o '2924724329.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36809913/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326727/",
-      "trailer_title": "折月亮 预告片：定档版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326727/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "黄颖湘",
         "陈丹"
       ],
@@ -411,6 +382,35 @@
     },
     {
       "directors": [
+        "张博昱"
+      ],
+      "rate": "4.7",
+      "cover_x": 2339,
+      "star": "25",
+      "title": "折月亮",
+      "url": "https://movie.douban.com/subject/36809913/",
+      "casts": [
+        "林一",
+        "卢昱晓",
+        "卢洋洋",
+        "李歌洋",
+        "黄圣池"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931738914.webp",
+      "id": "36809913",
+      "cover_y": 4158,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2924724329/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2924724329/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2924724329.jpg' -o '2924724329.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36809913/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326727/",
+      "trailer_title": "折月亮 预告片：定档版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326727/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36809913_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "董润年"
       ],
       "rate": "6.1",
@@ -437,38 +437,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325559/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36850814_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "周星驰",
-        "秦鹏飞",
-        "林子聪",
-        "卢正雨"
-      ],
-      "rate": "5.9",
-      "cover_x": 1800,
-      "star": "30",
-      "title": "功夫女足",
-      "url": "https://movie.douban.com/subject/36452545/",
-      "casts": [
-        "张小斐",
-        "迪丽热巴",
-        "张艺兴",
-        "刘嘉玲",
-        "佐藤健"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933860063.webp",
-      "id": "36452545",
-      "cover_y": 2875,
-      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2934353871.jpg",
-      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2934353871.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2934353871/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2934353871/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2934353871.jpg' -o '2934353871.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36452545/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/325275/",
-      "trailer_title": "功夫女足 预告片5：“周星驰，回来了！”版 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325275/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -530,32 +498,35 @@
     },
     {
       "directors": [
-        "丽贝卡·加特沃德"
+        "周星驰",
+        "秦鹏飞",
+        "林子聪",
+        "卢正雨"
       ],
-      "rate": "8.3",
-      "cover_x": 2000,
-      "star": "40",
-      "title": "翠鸟谋杀案",
-      "url": "https://movie.douban.com/subject/37218278/",
+      "rate": "5.9",
+      "cover_x": 1800,
+      "star": "30",
+      "title": "功夫女足",
+      "url": "https://movie.douban.com/subject/36452545/",
       "casts": [
-        "莱丝利·曼维尔",
-        "蒂姆·迈克穆兰",
-        "杰米·布莱克利",
-        "派翠西亚·霍吉",
-        "马克·博纳尔"
+        "张小斐",
+        "迪丽热巴",
+        "张艺兴",
+        "刘嘉玲",
+        "佐藤健"
       ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935049923.webp",
-      "id": "37218278",
-      "cover_y": 3000,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936182926/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936182926/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg' -o '2936182926.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37218278/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326076/",
-      "trailer_title": "翠鸟谋杀案 电视版",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326076/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4' -o trailer.mp4"
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2933860063.webp",
+      "id": "36452545",
+      "cover_y": 2875,
+      "horizontal_cover": "https://img2.doubanio.com/view/photo/l/public/p2934353871.jpg",
+      "horizontal_cover_composed": "https://img2.doubanio.com/view/photo/l/public/p2934353871.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2934353871/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2934353871/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img2.doubanio.com/view/photo/l/public/p2934353871.jpg' -o '2934353871.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36452545/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/325275/",
+      "trailer_title": "功夫女足 预告片5：“周星驰，回来了！”版 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325275/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -586,6 +557,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/318267/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "丽贝卡·加特沃德"
+      ],
+      "rate": "8.3",
+      "cover_x": 2000,
+      "star": "40",
+      "title": "翠鸟谋杀案",
+      "url": "https://movie.douban.com/subject/37218278/",
+      "casts": [
+        "莱丝利·曼维尔",
+        "蒂姆·迈克穆兰",
+        "杰米·布莱克利",
+        "派翠西亚·霍吉",
+        "马克·博纳尔"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935049923.webp",
+      "id": "37218278",
+      "cover_y": 3000,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936182926/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936182926/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg' -o '2936182926.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37218278/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326076/",
+      "trailer_title": "翠鸟谋杀案 电视版",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326076/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
