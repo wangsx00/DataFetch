@@ -60,35 +60,6 @@
     },
     {
       "directors": [
-        "张晓波"
-      ],
-      "rate": "8.1",
-      "cover_x": 4533,
-      "star": "40",
-      "title": "小城良方",
-      "url": "https://movie.douban.com/subject/36675942/",
-      "casts": [
-        "肖战",
-        "倪大红",
-        "姜妍",
-        "史彭元",
-        "菅纫姿"
-      ],
-      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2936709341.webp",
-      "id": "36675942",
-      "cover_y": 8058,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936881346/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936881346/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg' -o '2936881346.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36675942/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326317/",
-      "trailer_title": "小城良方 预告片2 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326317/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
         "韩延"
       ],
       "rate": "7.1",
@@ -115,6 +86,35 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326021/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37508847_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
+        "张晓波"
+      ],
+      "rate": "8.1",
+      "cover_x": 4533,
+      "star": "40",
+      "title": "小城良方",
+      "url": "https://movie.douban.com/subject/36675942/",
+      "casts": [
+        "肖战",
+        "倪大红",
+        "姜妍",
+        "史彭元",
+        "菅纫姿"
+      ],
+      "cover": "https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2936709341.webp",
+      "id": "36675942",
+      "cover_y": 8058,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936881346/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936881346/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936881346.jpg' -o '2936881346.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36675942/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/326317/",
+      "trailer_title": "小城良方 预告片2 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326317/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36675942_trailer.mp4' -o trailer.mp4"
     },
     {
       "directors": [
@@ -234,6 +234,35 @@
     },
     {
       "directors": [
+        "姚婷婷"
+      ],
+      "rate": "7.8",
+      "cover_x": 4500,
+      "star": "40",
+      "title": "蒸蒸日上",
+      "url": "https://movie.douban.com/subject/37296949/",
+      "casts": [
+        "王皓",
+        "高叶",
+        "韩东君",
+        "王丽娜",
+        "孙若宁"
+      ],
+      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936476679.webp",
+      "id": "37296949",
+      "cover_y": 8000,
+      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg",
+      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936706206/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936706206/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg' -o '2936706206.jpg'",
+      "trailer_page_url": null,
+      "trailer_detail_url": null,
+      "trailer_title": null,
+      "trailer_video_url": null,
+      "trailer_video_composed": null,
+      "trailer_download_command": null
+    },
+    {
+      "directors": [
         "德斯汀·丹尼尔·克雷顿"
       ],
       "rate": "7.7",
@@ -290,35 +319,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36155236_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36155236_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326444/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36155236_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "姚婷婷"
-      ],
-      "rate": "7.8",
-      "cover_x": 4500,
-      "star": "40",
-      "title": "蒸蒸日上",
-      "url": "https://movie.douban.com/subject/37296949/",
-      "casts": [
-        "王皓",
-        "高叶",
-        "韩东君",
-        "王丽娜",
-        "孙若宁"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2936476679.webp",
-      "id": "37296949",
-      "cover_y": 8000,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936706206/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936706206/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936706206.jpg' -o '2936706206.jpg'",
-      "trailer_page_url": null,
-      "trailer_detail_url": null,
-      "trailer_title": null,
-      "trailer_video_url": null,
-      "trailer_video_composed": null,
-      "trailer_download_command": null
     },
     {
       "directors": [
@@ -411,6 +411,36 @@
     },
     {
       "directors": [
+        "成红",
+        "赵大牛"
+      ],
+      "rate": "6.6",
+      "cover_x": 4000,
+      "star": "35",
+      "title": "走马上任",
+      "url": "https://movie.douban.com/subject/36942992/",
+      "casts": [
+        "王小利",
+        "蒋依杉",
+        "葛珊珊",
+        "程野",
+        "赵本山"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2922760095.webp",
+      "id": "36942992",
+      "cover_y": 7111,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2937706570.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2937706570.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2937706570/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2937706570/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2937706570.jpg' -o '2937706570.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/36942992/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/318267/",
+      "trailer_title": "走马上任 预告片 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/318267/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "董润年"
       ],
       "rate": "6.1",
@@ -498,6 +528,35 @@
     },
     {
       "directors": [
+        "徐展雄"
+      ],
+      "rate": "",
+      "cover_x": 5000,
+      "star": "0",
+      "title": "四渡",
+      "url": "https://movie.douban.com/subject/37191746/",
+      "casts": [
+        "刘烨",
+        "王雷",
+        "于适",
+        "王志飞",
+        "王耀庆"
+      ],
+      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2931635664.webp",
+      "id": "37191746",
+      "cover_y": 6997,
+      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2931649180.jpg",
+      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2931649180.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2931649180/",
+      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2931649180/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2931649180.jpg' -o '2931649180.jpg'",
+      "trailer_page_url": "https://movie.douban.com/subject/37191746/trailer",
+      "trailer_detail_url": "https://movie.douban.com/trailer/323191/",
+      "trailer_title": "四渡 预告片3 (中文字幕)",
+      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191746_trailer.mp4",
+      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191746_trailer.mp4",
+      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/323191/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37191746_trailer.mp4' -o trailer.mp4"
+    },
+    {
+      "directors": [
         "周星驰",
         "秦鹏飞",
         "林子聪",
@@ -527,65 +586,6 @@
       "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
       "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4",
       "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/325275/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36452545_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "成红",
-        "赵大牛"
-      ],
-      "rate": "6.6",
-      "cover_x": 4000,
-      "star": "35",
-      "title": "走马上任",
-      "url": "https://movie.douban.com/subject/36942992/",
-      "casts": [
-        "王小利",
-        "蒋依杉",
-        "葛珊珊",
-        "程野",
-        "赵本山"
-      ],
-      "cover": "https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2922760095.webp",
-      "id": "36942992",
-      "cover_y": 7111,
-      "horizontal_cover": "https://img3.doubanio.com/view/photo/l/public/p2937706570.jpg",
-      "horizontal_cover_composed": "https://img3.doubanio.com/view/photo/l/public/p2937706570.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2937706570/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2937706570/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img3.doubanio.com/view/photo/l/public/p2937706570.jpg' -o '2937706570.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/36942992/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/318267/",
-      "trailer_title": "走马上任 预告片 (中文字幕)",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/318267/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/36942992_trailer.mp4' -o trailer.mp4"
-    },
-    {
-      "directors": [
-        "丽贝卡·加特沃德"
-      ],
-      "rate": "8.3",
-      "cover_x": 2000,
-      "star": "40",
-      "title": "翠鸟谋杀案",
-      "url": "https://movie.douban.com/subject/37218278/",
-      "casts": [
-        "莱丝利·曼维尔",
-        "蒂姆·迈克穆兰",
-        "杰米·布莱克利",
-        "派翠西亚·霍吉",
-        "马克·博纳尔"
-      ],
-      "cover": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2935049923.webp",
-      "id": "37218278",
-      "cover_y": 3000,
-      "horizontal_cover": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg",
-      "horizontal_cover_composed": "https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg@User-Agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36@Referer=https://movie.douban.com/photos/photo/2936182926/",
-      "download_command": "curl -L -H 'Referer: https://movie.douban.com/photos/photo/2936182926/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://img9.doubanio.com/view/photo/l/public/p2936182926.jpg' -o '2936182926.jpg'",
-      "trailer_page_url": "https://movie.douban.com/subject/37218278/trailer",
-      "trailer_detail_url": "https://movie.douban.com/trailer/326076/",
-      "trailer_title": "翠鸟谋杀案 电视版",
-      "trailer_video_url": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
-      "trailer_video_composed": "https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4",
-      "trailer_download_command": "curl -L -H 'Referer: https://movie.douban.com/trailer/326076/' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' 'https://raw.githubusercontent.com/wangsx00/DataFetch/assets/37218278_trailer.mp4' -o trailer.mp4"
     }
   ]
 }
